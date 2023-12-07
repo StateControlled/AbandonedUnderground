@@ -1,0 +1,39 @@
+{
+  "block.abandonedunderground.small_white_tiles": "Small White Tiles",
+  "block.abandonedunderground.cracked_small_white_tiles": "Cracked Small White Tiles",
+  "block.abandonedunderground.dirty_small_white_tiles": "Dirty Small White Tiles",
+  "block.abandonedunderground.mossy_small_white_tiles": "Mossy Small White Tiles",
+  "block.abandonedunderground.chiseled_small_white_tile": "Chiseled Small White Tile",
+
+  "block.abandonedunderground.white_tiles": "White Tiles",
+  "block.abandonedunderground.cracked_white_tiles": "Cracked White Tiles",
+  "block.abandonedunderground.dirty_white_tiles": "Dirty White Tiles",
+  "block.abandonedunderground.mossy_white_tiles": "Mossy White Tiles",
+  "block.abandonedunderground.chiseled_white_tile": "Chiseled White Tile",
+
+  "block.abandonedunderground.small_black_tiles": "Small Black Tiles",
+  "block.abandonedunderground.cracked_small_black_tiles": "Cracked Small Black Tiles",
+  "block.abandonedunderground.dirty_small_black_tiles": "Dirty Small Black Tiles",
+  "block.abandonedunderground.mossy_small_black_tiles": "Mossy Small Black Tiles",
+  "block.abandonedunderground.chiseled_small_black_tile": "Chiseled Small Black Tile",
+
+  "block.abandonedunderground.black_tiles": "Black Tiles",
+  "block.abandonedunderground.cracked_black_tiles": "Cracked Black Tiles",
+  "block.abandonedunderground.dirty_black_tiles": "Dirty Black Tiles",
+  "block.abandonedunderground.mossy_black_tiles": "Mossy Black Tiles",
+  "block.abandonedunderground.chiseled_black_tile": "Chiseled Black Tile",
+
+  "block.abandonedunderground.concrete_platform": "Concrete Platform",
+  "block.abandonedunderground.cracked_concrete_platform": "Cracked Concrete Platform",
+  "block.abandonedunderground.dirty_concrete_platform": "Dirty Concrete Platform",
+  "block.abandonedunderground.mossy_concrete_platform": "Mossy Concrete Platform",
+  "block.abandonedunderground.lined_concrete_platform": "Lined Concrete Platform",
+
+  "block.abandonedunderground.smooth_light": "Smooth Light",
+
+  "block.abandonedunderground.metal_grate_floor": "Metal Grate Floor",
+  "block.abandonedunderground.steel_floor_plate": "Steel Floor Plate",
+  "block.abandonedunderground.smooth_metal_floor": "Smooth Metal Floor",
+
+  "creativetab_abandonedunderground_tab": "Abandoned Underground"
+}
