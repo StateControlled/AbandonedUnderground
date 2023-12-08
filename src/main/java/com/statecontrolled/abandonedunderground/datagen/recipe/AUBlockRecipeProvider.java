@@ -5,6 +5,8 @@ import java.util.function.Consumer;
 
 import com.statecontrolled.abandonedunderground.AbandonedUnderground;
 import com.statecontrolled.abandonedunderground.block.AUBlocks;
+import com.statecontrolled.abandonedunderground.datagen.blocks.AUBlockTagGenerator;
+import com.statecontrolled.abandonedunderground.tags.AUTags;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.FinishedRecipe;
@@ -12,6 +14,8 @@ import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.data.recipes.ShapedRecipeBuilder;
 import net.minecraft.data.recipes.SimpleCookingRecipeBuilder;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -30,6 +34,7 @@ public class AUBlockRecipeProvider extends RecipeProvider implements IConditionB
 
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> writer) {
+        /*LIGHT*/
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, AUBlocks.SMOOTH_LIGHT.get(), 8)
                 .pattern("PPP")
                 .pattern("PGP")
@@ -70,7 +75,7 @@ public class AUBlockRecipeProvider extends RecipeProvider implements IConditionB
                 .unlockedBy(getHasName(AUBlocks.WHITE_TILES.get()), has(AUBlocks.WHITE_TILES.get()))
                 .save(writer);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, AUBlocks.CHISELED_WHITE_TILE.get(), 8)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, AUBlocks.CHISELED_WHITE_TILES.get(), 8)
                 .pattern("SSS")
                 .pattern("S S")
                 .pattern("SSS")
@@ -80,9 +85,8 @@ public class AUBlockRecipeProvider extends RecipeProvider implements IConditionB
 
         /*SMALL WHITE TILES*/
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, AUBlocks.SMALL_WHITE_TILES.get(), 8)
-                .pattern("SSS")
-                .pattern("S S")
-                .pattern("SSS")
+                .pattern("SS")
+                .pattern("SS")
                 .define('S', AUBlocks.WHITE_TILES.get())
                 .unlockedBy(getHasName(AUBlocks.WHITE_TILES.get()), has(AUBlocks.WHITE_TILES.get()))
                 .save(writer);
@@ -108,7 +112,7 @@ public class AUBlockRecipeProvider extends RecipeProvider implements IConditionB
                 .unlockedBy(getHasName(AUBlocks.WHITE_TILES.get()), has(AUBlocks.WHITE_TILES.get()))
                 .save(writer);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, AUBlocks.CHISELED_SMALL_WHITE_TILE.get(), 8)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, AUBlocks.CHISELED_SMALL_WHITE_TILES.get(), 8)
                 .pattern("SSS")
                 .pattern("S S")
                 .pattern("SSS")
@@ -147,7 +151,7 @@ public class AUBlockRecipeProvider extends RecipeProvider implements IConditionB
                 .unlockedBy(getHasName(AUBlocks.BLACK_TILES.get()), has(AUBlocks.BLACK_TILES.get()))
                 .save(writer);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, AUBlocks.CHISELED_BLACK_TILE.get(), 8)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, AUBlocks.CHISELED_BLACK_TILES.get(), 8)
                 .pattern("SSS")
                 .pattern("S S")
                 .pattern("SSS")
@@ -157,9 +161,8 @@ public class AUBlockRecipeProvider extends RecipeProvider implements IConditionB
 
         /*SMALL BLACK TILES*/
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, AUBlocks.SMALL_BLACK_TILES.get(), 8)
-                .pattern("SSS")
-                .pattern("S S")
-                .pattern("SSS")
+                .pattern("SS")
+                .pattern("SS")
                 .define('S', AUBlocks.BLACK_TILES.get())
                 .unlockedBy(getHasName(AUBlocks.BLACK_TILES.get()), has(AUBlocks.BLACK_TILES.get()))
                 .save(writer);
@@ -185,7 +188,7 @@ public class AUBlockRecipeProvider extends RecipeProvider implements IConditionB
                 .unlockedBy(getHasName(AUBlocks.BLACK_TILES.get()), has(AUBlocks.BLACK_TILES.get()))
                 .save(writer);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, AUBlocks.CHISELED_SMALL_BLACK_TILE.get(), 8)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, AUBlocks.CHISELED_SMALL_BLACK_TILES.get(), 8)
                 .pattern("SSS")
                 .pattern("S S")
                 .pattern("SSS")
@@ -193,7 +196,70 @@ public class AUBlockRecipeProvider extends RecipeProvider implements IConditionB
                 .unlockedBy(getHasName(AUBlocks.BLACK_TILES.get()), has(AUBlocks.BLACK_TILES.get()))
                 .save(writer);
 
-    }
+        /*CONCRETE*/
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, AUBlocks.CONCRETE_PLATFORM.get(), 4)
+                .pattern("CC")
+                .pattern("CC")
+                .define('C',AUTags.AUItemTags.CONCRETE_ITEM_TAG)
+                .unlockedBy(getHasName(AUBlocks.WHITE_TILES.get()), has(AUBlocks.WHITE_TILES.get()))
+                .save(writer);
+
+        oreFurnaceSmelting(writer, List.of(AUBlocks.CONCRETE_PLATFORM.get()), RecipeCategory.BUILDING_BLOCKS,
+                AUBlocks.CRACKED_CONCRETE_PLATFORM.get(), 0.1f, 300, "cracked_concrete_platform");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, AUBlocks.DIRTY_CONCRETE_PLATFORM.get(), 8)
+                .pattern("CCC")
+                .pattern("CDC")
+                .pattern("CCC")
+                .define('C', AUBlocks.CONCRETE_PLATFORM.get())
+                .define('D', Blocks.DIRT)
+                .unlockedBy(getHasName(AUBlocks.CONCRETE_PLATFORM.get()), has(AUBlocks.CONCRETE_PLATFORM.get()))
+                .save(writer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, AUBlocks.MOSSY_CONCRETE_PLATFORM.get(), 8)
+                .pattern("CCC")
+                .pattern("CMC")
+                .pattern("CCC")
+                .define('C', AUBlocks.CONCRETE_PLATFORM.get())
+                .define('M', Items.VINE)
+                .unlockedBy(getHasName(AUBlocks.CONCRETE_PLATFORM.get()), has(AUBlocks.CONCRETE_PLATFORM.get()))
+                .save(writer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, AUBlocks.LINED_CONCRETE_PLATFORM.get(), 8)
+                .pattern("CCC")
+                .pattern("CYC")
+                .pattern("CCC")
+                .define('C', AUBlocks.CONCRETE_PLATFORM.get())
+                .define('Y', Items.YELLOW_DYE)
+                .unlockedBy(getHasName(AUBlocks.CONCRETE_PLATFORM.get()), has(AUBlocks.CONCRETE_PLATFORM.get()))
+                .save(writer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, AUBlocks.METAL_GRATE_FLOOR.get(), 6)
+                .pattern("I I")
+                .pattern(" I ")
+                .pattern("I I")
+                .define('I', Items.IRON_INGOT)
+                .unlockedBy(getHasName(AUBlocks.CONCRETE_PLATFORM.get()), has(AUBlocks.CONCRETE_PLATFORM.get()))
+                .save(writer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, AUBlocks.STEEL_PLATE_FLOOR.get(), 8)
+                .pattern("III")
+                .pattern("SSS")
+                .define('I', Items.IRON_NUGGET)
+                .define('S', Blocks.STONE)
+                .unlockedBy(getHasName(AUBlocks.CONCRETE_PLATFORM.get()), has(AUBlocks.CONCRETE_PLATFORM.get()))
+                .save(writer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, AUBlocks.SMOOTH_METAL_FLOOR.get(), 8)
+                .pattern("III")
+                .pattern("SSS")
+                .define('I', Items.IRON_INGOT)
+                .define('S', Blocks.STONE)
+                .unlockedBy(getHasName(AUBlocks.CONCRETE_PLATFORM.get()), has(AUBlocks.CONCRETE_PLATFORM.get()))
+                .save(writer);
+
+
+    } // END METHOD
 
     /**
      * Creates a furnace smelting recipe.

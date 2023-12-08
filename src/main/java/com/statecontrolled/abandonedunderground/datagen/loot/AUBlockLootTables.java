@@ -28,25 +28,25 @@ public class AUBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(AUBlocks.CRACKED_SMALL_WHITE_TILES.get());
         this.dropSelf(AUBlocks.DIRTY_SMALL_WHITE_TILES.get());
         this.dropSelf(AUBlocks.MOSSY_SMALL_WHITE_TILES.get());
-        this.dropSelf(AUBlocks.CHISELED_SMALL_WHITE_TILE.get());
+        this.dropSelf(AUBlocks.CHISELED_SMALL_WHITE_TILES.get());
 
         this.dropSelf(AUBlocks.WHITE_TILES.get());
         this.dropSelf(AUBlocks.CRACKED_WHITE_TILES.get());
         this.dropSelf(AUBlocks.DIRTY_WHITE_TILES.get());
         this.dropSelf(AUBlocks.MOSSY_WHITE_TILES.get());
-        this.dropSelf(AUBlocks.CHISELED_WHITE_TILE.get());
+        this.dropSelf(AUBlocks.CHISELED_WHITE_TILES.get());
 
         this.dropSelf(AUBlocks.SMALL_BLACK_TILES.get());
         this.dropSelf(AUBlocks.CRACKED_SMALL_BLACK_TILES.get());
         this.dropSelf(AUBlocks.DIRTY_SMALL_BLACK_TILES.get());
         this.dropSelf(AUBlocks.MOSSY_SMALL_BLACK_TILES.get());
-        this.dropSelf(AUBlocks.CHISELED_SMALL_BLACK_TILE.get());
+        this.dropSelf(AUBlocks.CHISELED_SMALL_BLACK_TILES.get());
 
         this.dropSelf(AUBlocks.BLACK_TILES.get());
         this.dropSelf(AUBlocks.CRACKED_BLACK_TILES.get());
         this.dropSelf(AUBlocks.DIRTY_BLACK_TILES.get());
         this.dropSelf(AUBlocks.MOSSY_BLACK_TILES.get());
-        this.dropSelf(AUBlocks.CHISELED_BLACK_TILE.get());
+        this.dropSelf(AUBlocks.CHISELED_BLACK_TILES.get());
 
         this.dropSelf(AUBlocks.CONCRETE_PLATFORM.get());
         this.dropSelf(AUBlocks.CRACKED_CONCRETE_PLATFORM.get());
@@ -55,7 +55,7 @@ public class AUBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(AUBlocks.LINED_CONCRETE_PLATFORM.get());
 
         this.dropSelf(AUBlocks.METAL_GRATE_FLOOR.get());
-        this.dropSelf(AUBlocks.STEEL_FLOOR_PLATE.get());
+        this.dropSelf(AUBlocks.STEEL_PLATE_FLOOR.get());
         this.dropSelf(AUBlocks.SMOOTH_METAL_FLOOR.get());
 
         this.dropSelf(AUBlocks.SMOOTH_LIGHT.get());

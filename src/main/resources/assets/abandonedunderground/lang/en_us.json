@@ -3,25 +3,25 @@
   "block.abandonedunderground.cracked_small_white_tiles": "Cracked Small White Tiles",
   "block.abandonedunderground.dirty_small_white_tiles": "Dirty Small White Tiles",
   "block.abandonedunderground.mossy_small_white_tiles": "Mossy Small White Tiles",
-  "block.abandonedunderground.chiseled_small_white_tile": "Chiseled Small White Tile",
+  "block.abandonedunderground.chiseled_small_white_tile": "Chiseled Small White Tiles",
 
   "block.abandonedunderground.white_tiles": "White Tiles",
   "block.abandonedunderground.cracked_white_tiles": "Cracked White Tiles",
   "block.abandonedunderground.dirty_white_tiles": "Dirty White Tiles",
   "block.abandonedunderground.mossy_white_tiles": "Mossy White Tiles",
-  "block.abandonedunderground.chiseled_white_tile": "Chiseled White Tile",
+  "block.abandonedunderground.chiseled_white_tile": "Chiseled White Tiles",
 
   "block.abandonedunderground.small_black_tiles": "Small Black Tiles",
   "block.abandonedunderground.cracked_small_black_tiles": "Cracked Small Black Tiles",
   "block.abandonedunderground.dirty_small_black_tiles": "Dirty Small Black Tiles",
   "block.abandonedunderground.mossy_small_black_tiles": "Mossy Small Black Tiles",
-  "block.abandonedunderground.chiseled_small_black_tile": "Chiseled Small Black Tile",
+  "block.abandonedunderground.chiseled_small_black_tile": "Chiseled Small Black Tiles",
 
   "block.abandonedunderground.black_tiles": "Black Tiles",
   "block.abandonedunderground.cracked_black_tiles": "Cracked Black Tiles",
   "block.abandonedunderground.dirty_black_tiles": "Dirty Black Tiles",
   "block.abandonedunderground.mossy_black_tiles": "Mossy Black Tiles",
-  "block.abandonedunderground.chiseled_black_tile": "Chiseled Black Tile",
+  "block.abandonedunderground.chiseled_black_tile": "Chiseled Black Tiles",
 
   "block.abandonedunderground.concrete_platform": "Concrete Platform",
   "block.abandonedunderground.cracked_concrete_platform": "Cracked Concrete Platform",
@@ -29,11 +29,36 @@
   "block.abandonedunderground.mossy_concrete_platform": "Mossy Concrete Platform",
   "block.abandonedunderground.lined_concrete_platform": "Lined Concrete Platform",
 
+  "block.abandonedunderground.metal_grate_floor": "Metal Grate Floor",
+  "block.abandonedunderground.steel_floor_plate": "Steel Plate Floor",
+  "block.abandonedunderground.smooth_metal_floor": "Smooth Metal Floor",
+
   "block.abandonedunderground.smooth_light": "Smooth Light",
 
-  "block.abandonedunderground.metal_grate_floor": "Metal Grate Floor",
-  "block.abandonedunderground.steel_floor_plate": "Steel Floor Plate",
-  "block.abandonedunderground.smooth_metal_floor": "Smooth Metal Floor",
+  "block.abandonedunderground.small_white_tile_stairs": "Small White Tile Stairs",
+  "block.abandonedunderground.dirty_small_white_tile_stairs": "Dirty Small White Tile Stairs",
+  "block.abandonedunderground.mossy_small_white_tile_stairs": "Mossy Small White Tile Stairs",
+
+  "block.abandonedunderground.white_tile_stairs": "White Tile Stairs",
+  "block.abandonedunderground.dirty_white_tile_stairs": "Dirty White Tile Stairs",
+  "block.abandonedunderground.mossy_white_tile_stairs": "Mossy White Tile Stairs",
+
+  "block.abandonedunderground.small_black_tile_stairs": "Small Black Tile Stairs",
+  "block.abandonedunderground.dirty_small_black_tile_stairs": "Dirty Small Black Tile Stairs",
+  "block.abandonedunderground.mossy_small_black_tile_stairs": "Mossy Small Black Tile Stairs",
+
+  "block.abandonedunderground.black_tile_stairs": "Black Tile Stairs",
+  "block.abandonedunderground.dirty_black_tile_stairs": "Dirty Black Tile Stairs",
+  "block.abandonedunderground.mossy_black_tile_stairs": "Mossy Black Tile Stairs",
+
+  "block.abandonedunderground.concrete_platform_stairs": "Concrete Platform Stairs",
+  "block.abandonedunderground.dirty_concrete_platform_stairs": "Dirty Concrete Platform Stairs",
+  "block.abandonedunderground.mossy_concrete_platform_stairs": "Mossy Concrete Platform Stairs",
+
+  "block.abandonedunderground.steel_plate_stairs": "Steel Plate Stairs",
+  "block.abandonedunderground.smooth_metal_stairs": "Smooth Metal Stairs",
+
+
 
   "creativetab_abandonedunderground_tab": "Abandoned Underground"
 }

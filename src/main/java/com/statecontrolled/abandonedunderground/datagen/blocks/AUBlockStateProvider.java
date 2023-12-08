@@ -21,25 +21,25 @@ public class AUBlockStateProvider extends BlockStateProvider {
         blockWithItem(AUBlocks.CRACKED_SMALL_WHITE_TILES);
         blockWithItem(AUBlocks.DIRTY_SMALL_WHITE_TILES);
         blockWithItem(AUBlocks.MOSSY_SMALL_WHITE_TILES);
-        blockWithItem(AUBlocks.CHISELED_SMALL_WHITE_TILE);
+        blockWithItem(AUBlocks.CHISELED_SMALL_WHITE_TILES);
 
         blockWithItem(AUBlocks.WHITE_TILES);
         blockWithItem(AUBlocks.CRACKED_WHITE_TILES);
         blockWithItem(AUBlocks.DIRTY_WHITE_TILES);
         blockWithItem(AUBlocks.MOSSY_WHITE_TILES);
-        blockWithItem(AUBlocks.CHISELED_WHITE_TILE);
+        blockWithItem(AUBlocks.CHISELED_WHITE_TILES);
 
         blockWithItem(AUBlocks.SMALL_BLACK_TILES);
         blockWithItem(AUBlocks.CRACKED_SMALL_BLACK_TILES);
         blockWithItem(AUBlocks.DIRTY_SMALL_BLACK_TILES);
         blockWithItem(AUBlocks.MOSSY_SMALL_BLACK_TILES);
-        blockWithItem(AUBlocks.CHISELED_SMALL_BLACK_TILE);
+        blockWithItem(AUBlocks.CHISELED_SMALL_BLACK_TILES);
 
         blockWithItem(AUBlocks.BLACK_TILES);
         blockWithItem(AUBlocks.CRACKED_BLACK_TILES);
         blockWithItem(AUBlocks.DIRTY_BLACK_TILES);
         blockWithItem(AUBlocks.MOSSY_BLACK_TILES);
-        blockWithItem(AUBlocks.CHISELED_BLACK_TILE);
+        blockWithItem(AUBlocks.CHISELED_BLACK_TILES);
 
         blockWithItem(AUBlocks.CONCRETE_PLATFORM);
         blockWithItem(AUBlocks.CRACKED_CONCRETE_PLATFORM);
@@ -50,7 +50,7 @@ public class AUBlockStateProvider extends BlockStateProvider {
         blockWithItem(AUBlocks.SMOOTH_LIGHT);
 
         blockWithItem(AUBlocks.METAL_GRATE_FLOOR);
-        blockWithItem(AUBlocks.STEEL_FLOOR_PLATE);
+        blockWithItem(AUBlocks.STEEL_PLATE_FLOOR);
         blockWithItem(AUBlocks.SMOOTH_METAL_FLOOR);
     }
 

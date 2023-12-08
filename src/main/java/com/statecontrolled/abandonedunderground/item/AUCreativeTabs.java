@@ -23,25 +23,25 @@ public class AUCreativeTabs {
                         output.accept(AUBlocks.CRACKED_SMALL_WHITE_TILES.get());
                         output.accept(AUBlocks.DIRTY_SMALL_WHITE_TILES.get());
                         output.accept(AUBlocks.MOSSY_SMALL_WHITE_TILES.get());
-                        output.accept(AUBlocks.CHISELED_SMALL_WHITE_TILE.get());
+                        output.accept(AUBlocks.CHISELED_SMALL_WHITE_TILES.get());
 
                         output.accept(AUBlocks.WHITE_TILES.get());
                         output.accept(AUBlocks.CRACKED_WHITE_TILES.get());
                         output.accept(AUBlocks.DIRTY_WHITE_TILES.get());
                         output.accept(AUBlocks.MOSSY_WHITE_TILES.get());
-                        output.accept(AUBlocks.CHISELED_WHITE_TILE.get());
+                        output.accept(AUBlocks.CHISELED_WHITE_TILES.get());
 
                         output.accept(AUBlocks.SMALL_BLACK_TILES.get());
                         output.accept(AUBlocks.CRACKED_SMALL_BLACK_TILES.get());
                         output.accept(AUBlocks.DIRTY_SMALL_BLACK_TILES.get());
                         output.accept(AUBlocks.MOSSY_SMALL_BLACK_TILES.get());
-                        output.accept(AUBlocks.CHISELED_SMALL_BLACK_TILE.get());
+                        output.accept(AUBlocks.CHISELED_SMALL_BLACK_TILES.get());
 
                         output.accept(AUBlocks.BLACK_TILES.get());
                         output.accept(AUBlocks.CRACKED_BLACK_TILES.get());
                         output.accept(AUBlocks.DIRTY_BLACK_TILES.get());
                         output.accept(AUBlocks.MOSSY_BLACK_TILES.get());
-                        output.accept(AUBlocks.CHISELED_BLACK_TILE.get());
+                        output.accept(AUBlocks.CHISELED_BLACK_TILES.get());
 
                         output.accept(AUBlocks.CONCRETE_PLATFORM.get());
                         output.accept(AUBlocks.CRACKED_CONCRETE_PLATFORM.get());
@@ -52,7 +52,7 @@ public class AUCreativeTabs {
                         output.accept(AUBlocks.SMOOTH_LIGHT.get());
 
                         output.accept(AUBlocks.METAL_GRATE_FLOOR.get());
-                        output.accept(AUBlocks.STEEL_FLOOR_PLATE.get());
+                        output.accept(AUBlocks.STEEL_PLATE_FLOOR.get());
                         output.accept(AUBlocks.SMOOTH_METAL_FLOOR.get());
 
                     }).build());

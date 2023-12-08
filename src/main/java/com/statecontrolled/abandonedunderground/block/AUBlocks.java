@@ -9,6 +9,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -19,6 +20,7 @@ public class AUBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, AbandonedUnderground.MOD_ID);
 
+    /*BLOCKS*/
     public static final RegistryObject<Block> SMALL_WHITE_TILES = registerBlock("small_white_tiles",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> CRACKED_SMALL_WHITE_TILES = registerBlock("cracked_small_white_tiles",
@@ -27,7 +29,7 @@ public class AUBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> MOSSY_SMALL_WHITE_TILES = registerBlock("mossy_small_white_tiles",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> CHISELED_SMALL_WHITE_TILE = registerBlock("chiseled_small_white_tile",
+    public static final RegistryObject<Block> CHISELED_SMALL_WHITE_TILES = registerBlock("chiseled_small_white_tiles",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> WHITE_TILES = registerBlock("white_tiles",
@@ -38,7 +40,7 @@ public class AUBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> MOSSY_WHITE_TILES = registerBlock("mossy_white_tiles",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> CHISELED_WHITE_TILE = registerBlock("chiseled_white_tile",
+    public static final RegistryObject<Block> CHISELED_WHITE_TILES = registerBlock("chiseled_white_tiles",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> SMALL_BLACK_TILES = registerBlock("small_black_tiles",
@@ -49,7 +51,7 @@ public class AUBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> MOSSY_SMALL_BLACK_TILES = registerBlock("mossy_small_black_tiles",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> CHISELED_SMALL_BLACK_TILE = registerBlock("chiseled_small_black_tile",
+    public static final RegistryObject<Block> CHISELED_SMALL_BLACK_TILES = registerBlock("chiseled_small_black_tiles",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> BLACK_TILES = registerBlock("black_tiles",
@@ -60,7 +62,7 @@ public class AUBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> MOSSY_BLACK_TILES = registerBlock("mossy_black_tiles",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> CHISELED_BLACK_TILE = registerBlock("chiseled_black_tile",
+    public static final RegistryObject<Block> CHISELED_BLACK_TILES = registerBlock("chiseled_black_tiles",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> CONCRETE_PLATFORM = registerBlock("concrete_platform",
@@ -75,14 +77,77 @@ public class AUBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> SMOOTH_LIGHT = registerBlock("smooth_light",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> METAL_GRATE_FLOOR = registerBlock("metal_grate_floor",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> STEEL_FLOOR_PLATE = registerBlock("steel_floor_plate",
+    public static final RegistryObject<Block> STEEL_PLATE_FLOOR = registerBlock("steel_plate_floor",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> SMOOTH_METAL_FLOOR = registerBlock("smooth_metal_floor",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
+
+    /*STAIRS*/
+    public static final RegistryObject<Block> WHITE_TILE_STAIRS = registerBlock("white_tile_stairs",
+            () -> new StairBlock(() -> AUBlocks.WHITE_TILES.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS)));
+    public static final RegistryObject<Block> MOSSY_WHITE_TILE_STAIRS = registerBlock("mossy_white_tile_stairs",
+            () -> new StairBlock(() -> AUBlocks.WHITE_TILES.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS)));
+    public static final RegistryObject<Block> DIRTY_WHITE_TILE_STAIRS = registerBlock("dirty_white_tile_stairs",
+            () -> new StairBlock(() -> AUBlocks.WHITE_TILES.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS)));
+
+    public static final RegistryObject<Block> BLACK_TILE_STAIRS = registerBlock("black_tile_stairs",
+            () -> new StairBlock(() -> AUBlocks.BLACK_TILES.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS)));
+    public static final RegistryObject<Block> MOSSY_BLACK_TILE_STAIRS = registerBlock("mossy_black_tile_stairs",
+            () -> new StairBlock(() -> AUBlocks.BLACK_TILES.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS)));
+    public static final RegistryObject<Block> DIRTY_BLACK_TILE_STAIRS = registerBlock("dirty_black_tile_stairs",
+            () -> new StairBlock(() -> AUBlocks.BLACK_TILES.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS)));
+
+    public static final RegistryObject<Block> SMALL_WHITE_TILE_STAIRS = registerBlock("small_white_tile_stairs",
+            () -> new StairBlock(() -> AUBlocks.WHITE_TILES.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS)));
+    public static final RegistryObject<Block> SMALL_MOSSY_WHITE_TILE_STAIRS = registerBlock("mossy_small_white_tile_stairs",
+            () -> new StairBlock(() -> AUBlocks.WHITE_TILES.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS)));
+    public static final RegistryObject<Block> SMALL_DIRTY_WHITE_TILE_STAIRS = registerBlock("dirty_small_white_tile_stairs",
+            () -> new StairBlock(() -> AUBlocks.WHITE_TILES.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS)));
+
+    public static final RegistryObject<Block> SMALL_BLACK_TILE_STAIRS = registerBlock("small_black_tile_stairs",
+            () -> new StairBlock(() -> AUBlocks.BLACK_TILES.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS)));
+    public static final RegistryObject<Block> SMALL_MOSSY_BLACK_TILE_STAIRS = registerBlock("mossy_small_black_tile_stairs",
+            () -> new StairBlock(() -> AUBlocks.BLACK_TILES.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS)));
+    public static final RegistryObject<Block> SMALL_DIRTY_BLACK_TILE_STAIRS = registerBlock("dirty_small_black_tile_stairs",
+            () -> new StairBlock(() -> AUBlocks.BLACK_TILES.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS)));
+
+    public static final RegistryObject<Block> CONCRETE_PLATFORM_STAIRS = registerBlock("concrete_platform_stairs",
+            () -> new StairBlock(() -> AUBlocks.CONCRETE_PLATFORM.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS)));
+    public static final RegistryObject<Block> MOSSY_CONCRETE_PLATFORM_STAIRS = registerBlock("mossy_concrete_platform_stairs",
+            () -> new StairBlock(() -> AUBlocks.CONCRETE_PLATFORM.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS)));
+    public static final RegistryObject<Block> DIRTY_CONCRETE_PLATFORM_STAIRS = registerBlock("dirty_concrete_platform_stairs",
+            () -> new StairBlock(() -> AUBlocks.CONCRETE_PLATFORM.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS)));
+
+    public static final RegistryObject<Block> STEEL_PLATE_STAIRS = registerBlock("steel_plate_stairs",
+            () -> new StairBlock(() -> AUBlocks.STEEL_PLATE_FLOOR.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS)));
+    public static final RegistryObject<Block> SMOOTH_METAL_STAIRS = registerBlock("smooth_metal_stairs",
+            () -> new StairBlock(() -> AUBlocks.SMOOTH_METAL_FLOOR.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS)));
+    // TODO add slabs
+    /*SLABS*/
+//    public static final RegistryObject<Block> WHITE_TILE_SLAB = registerBlock("white_tile_slab",
+//            () -> new StairBlock(() -> AUBlocks.WHITE_TILES.get().defaultBlockState(),
+//                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB)));
 
     private AUBlocks() {
         ;

@@ -18,7 +18,7 @@ public class AUTags {
      * For creating custom block tags
      */
     public static class AUBlockTags {
-        //public static final TagKey<Block> AU_BLOCK_TAG = tag("name");
+        public static final TagKey<Block> CONCRETE_BLOCK_TAG = tag("minecraft_concrete");
 
         public static TagKey<Block> tag(String name) {
             return BlockTags.create(new ResourceLocation(AbandonedUnderground.MOD_ID, name));
@@ -29,6 +29,7 @@ public class AUTags {
      * For creating custom item tags
      */
     public static class AUItemTags {
+        public static final TagKey<Item> CONCRETE_ITEM_TAG = tag("minecraft_concrete");
 
         private static TagKey<Item> tag(String name) {
             return ItemTags.create(new ResourceLocation(AbandonedUnderground.MOD_ID, name));
