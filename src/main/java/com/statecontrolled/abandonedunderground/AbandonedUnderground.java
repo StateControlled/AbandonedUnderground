@@ -1,8 +1,8 @@
 package com.statecontrolled.abandonedunderground;
 
 import com.mojang.logging.LogUtils;
-import com.statecontrolled.abandonedunderground.block.ModBlocks;
-import com.statecontrolled.abandonedunderground.item.ModItems;
+import com.statecontrolled.abandonedunderground.block.AUBlocks;
+import com.statecontrolled.abandonedunderground.item.AUItems;
 
 import net.minecraft.client.Minecraft;
 import net.minecraftforge.api.distmarker.Dist;
@@ -31,10 +31,8 @@ public class AbandonedUnderground {
     public AbandonedUnderground() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        ModBlocks.register(modEventBus);
-        ModItems.register(modEventBus);
-
-
+        AUBlocks.register(modEventBus);
+        AUItems.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
@@ -72,7 +70,6 @@ public class AbandonedUnderground {
 
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-
             LogUtils.getLogger().info("CLIENT SETUP MINECRAFT NAME : {}", Minecraft.getInstance().getUser().getName());
         }
     }

@@ -3,7 +3,7 @@ package com.statecontrolled.abandonedunderground.block;
 import java.util.function.Supplier;
 
 import com.statecontrolled.abandonedunderground.AbandonedUnderground;
-import com.statecontrolled.abandonedunderground.item.ModItems;
+import com.statecontrolled.abandonedunderground.item.AUItems;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -15,7 +15,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-public class ModBlocks {
+public class AUBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, AbandonedUnderground.MOD_ID);
 
@@ -84,7 +84,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> SMOOTH_METAL_FLOOR = registerBlock("smooth_metal_floor",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
 
-    private ModBlocks() {
+    private AUBlocks() {
         ;
     }
 
@@ -95,7 +95,7 @@ public class ModBlocks {
     }
 
     private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block) {
-        ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+        AUItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
 
     public static void register(IEventBus eventBus) {
