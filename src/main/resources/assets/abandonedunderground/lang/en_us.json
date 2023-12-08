@@ -58,6 +58,28 @@
   "block.abandonedunderground.steel_plate_stairs": "Steel Plate Stairs",
   "block.abandonedunderground.smooth_metal_stairs": "Smooth Metal Stairs",
 
+  "block.abandonedunderground.white_tile_slab": "White Tile Slab",
+  "block.abandonedunderground.dirty_white_tile_slab": "Dirty White Tile Slab",
+  "block.abandonedunderground.mossy_white_tile_slab": "Mossy White Tile Slab",
+
+  "block.abandonedunderground.black_tile_slab": "Black Tile Slab",
+  "block.abandonedunderground.dirty_black_tile_slab": "Dirty Black Tile Slab",
+  "block.abandonedunderground.mossy_black_tile_slab": "Mossy Black Tile Slab",
+
+  "block.abandonedunderground.small_white_tile_slab": "Small White Tile Slab",
+  "block.abandonedunderground.dirty_small_white_tile_slab": "Dirty Small White Tile Slab",
+  "block.abandonedunderground.mossy_small_white_tile_slab": "Mossy White Tile Slab",
+
+  "block.abandonedunderground.small_black_tile_slab": "Small Black Tile Slab",
+  "block.abandonedunderground.dirty_small_black_tile_slab": "Dirty Small Black Tile Slab",
+  "block.abandonedunderground.mossy_small_black_tile_slab": "Mossy Small Black Tile Slab",
+
+  "block.abandonedunderground.concrete_platform_slab": "Concrete Platform Slab",
+  "block.abandonedunderground.dirty_concrete_platform_slab": "Dirty Concrete Platform Slab",
+  "block.abandonedunderground.mossy_concrete_platform_slab": "Mossy Concrete Platform Slab",
+
+  "block.abandonedunderground.steel_plate_slab": "Steel Plate Slab",
+  "block.abandonedunderground.smooth_metal_slab": "Smooth Metal Slab",
 
 
   "creativetab_abandonedunderground_tab": "Abandoned Underground"

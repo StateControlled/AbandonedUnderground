@@ -15,6 +15,7 @@ import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.minecraftforge.registries.RegistryObject;
+import org.jetbrains.annotations.NotNull;
 
 public class AUBlockLootTables extends BlockLootSubProvider {
 
@@ -59,10 +60,61 @@ public class AUBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(AUBlocks.SMOOTH_METAL_FLOOR.get());
 
         this.dropSelf(AUBlocks.SMOOTH_LIGHT.get());
+
+        /////////////////////////////////////////////////////////////
+
+        this.dropSelf(AUBlocks.SMALL_WHITE_TILE_STAIRS.get());
+        this.dropSelf(AUBlocks.DIRTY_SMALL_WHITE_TILE_STAIRS.get());
+        this.dropSelf(AUBlocks.MOSSY_SMALL_WHITE_TILE_STAIRS.get());
+
+        this.dropSelf(AUBlocks.WHITE_TILE_STAIRS.get());
+        this.dropSelf(AUBlocks.DIRTY_WHITE_TILE_STAIRS.get());
+        this.dropSelf(AUBlocks.MOSSY_WHITE_TILE_STAIRS.get());
+
+        this.dropSelf(AUBlocks.SMALL_BLACK_TILE_STAIRS.get());
+        this.dropSelf(AUBlocks.DIRTY_SMALL_BLACK_TILE_STAIRS.get());
+        this.dropSelf(AUBlocks.MOSSY_SMALL_BLACK_TILE_STAIRS.get());
+
+        this.dropSelf(AUBlocks.BLACK_TILE_STAIRS.get());
+        this.dropSelf(AUBlocks.DIRTY_BLACK_TILE_STAIRS.get());
+        this.dropSelf(AUBlocks.MOSSY_BLACK_TILE_STAIRS.get());
+
+        this.dropSelf(AUBlocks.CONCRETE_PLATFORM_STAIRS.get());
+        this.dropSelf(AUBlocks.DIRTY_CONCRETE_PLATFORM_STAIRS.get());
+        this.dropSelf(AUBlocks.MOSSY_CONCRETE_PLATFORM_STAIRS.get());
+
+        this.dropSelf(AUBlocks.STEEL_PLATE_STAIRS.get());
+        this.dropSelf(AUBlocks.SMOOTH_METAL_STAIRS.get());
+
+        /////////////////////////////////////////////////////////////
+
+        this.dropSelf(AUBlocks.WHITE_TILE_SLAB.get());
+        this.dropSelf(AUBlocks.DIRTY_WHITE_TILE_SLAB.get());
+        this.dropSelf(AUBlocks.MOSSY_WHITE_TILE_SLAB.get());
+
+        this.dropSelf(AUBlocks.BLACK_TILE_SLAB.get());
+        this.dropSelf(AUBlocks.DIRTY_BLACK_TILE_SLAB.get());
+        this.dropSelf(AUBlocks.MOSSY_BLACK_TILE_SLAB.get());
+
+        this.dropSelf(AUBlocks.SMALL_WHITE_TILE_SLAB.get());
+        this.dropSelf(AUBlocks.DIRTY_SMALL_WHITE_TILE_SLAB.get());
+        this.dropSelf(AUBlocks.MOSSY_SMALL_WHITE_TILE_SLAB.get());
+
+        this.dropSelf(AUBlocks.SMALL_BLACK_TILE_SLAB.get());
+        this.dropSelf(AUBlocks.DIRTY_SMALL_BLACK_TILE_SLAB.get());
+        this.dropSelf(AUBlocks.MOSSY_SMALL_BLACK_TILE_SLAB.get());
+
+        this.dropSelf(AUBlocks.CONCRETE_PLATFORM_SLAB.get());
+        this.dropSelf(AUBlocks.DIRTY_CONCRETE_PLATFORM_SLAB.get());
+        this.dropSelf(AUBlocks.MOSSY_CONCRETE_PLATFORM_SLAB.get());
+
+        this.dropSelf(AUBlocks.STEEL_PLATE_SLAB.get());
+        this.dropSelf(AUBlocks.SMOOTH_METAL_SLAB.get());
+
     }
 
     @Override
-    protected Iterable<Block> getKnownBlocks() {
+    protected @NotNull Iterable<Block> getKnownBlocks() {
         return AUBlocks.BLOCKS.getEntries().stream().map(RegistryObject::get)::iterator;
     }
 
