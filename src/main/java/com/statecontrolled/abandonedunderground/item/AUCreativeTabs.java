@@ -1,5 +1,7 @@
 package com.statecontrolled.abandonedunderground.item;
 
+import java.util.logging.Level;
+
 import com.statecontrolled.abandonedunderground.AbandonedUnderground;
 import com.statecontrolled.abandonedunderground.block.AUBlocks;
 
@@ -15,7 +17,7 @@ public class AUCreativeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, AbandonedUnderground.MOD_ID);
 
-    public static final RegistryObject<CreativeModeTab> ABANDONDED_UNDERGROUND_TAB = CREATIVE_MODE_TABS.register("abandonedunderground_tab",
+    public static final RegistryObject<CreativeModeTab> ABANDONED_UNDERGROUND_TAB = CREATIVE_MODE_TABS.register("abandonedunderground_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(AUBlocks.SMALL_WHITE_TILES.get()))
                     .title(Component.translatable("creativetab.abandonedunderground_tab"))
                     .displayItems((displayParameters, output) -> {
@@ -54,6 +56,56 @@ public class AUCreativeTabs {
                         output.accept(AUBlocks.METAL_GRATE_FLOOR.get());
                         output.accept(AUBlocks.STEEL_PLATE_FLOOR.get());
                         output.accept(AUBlocks.SMOOTH_METAL_FLOOR.get());
+
+                        ///////////////////////////////////////////////////////
+
+                        output.accept(AUBlocks.SMALL_WHITE_TILE_STAIRS.get());
+                        output.accept(AUBlocks.DIRTY_SMALL_WHITE_TILE_STAIRS.get());
+                        output.accept(AUBlocks.MOSSY_SMALL_WHITE_TILE_STAIRS.get());
+
+                        output.accept(AUBlocks.WHITE_TILE_STAIRS.get());
+                        output.accept(AUBlocks.DIRTY_WHITE_TILE_STAIRS.get());
+                        output.accept(AUBlocks.MOSSY_WHITE_TILE_STAIRS.get());
+
+                        output.accept(AUBlocks.SMALL_BLACK_TILE_STAIRS.get());
+                        output.accept(AUBlocks.DIRTY_SMALL_BLACK_TILE_STAIRS.get());
+                        output.accept(AUBlocks.MOSSY_SMALL_BLACK_TILE_STAIRS.get());
+
+                        output.accept(AUBlocks.BLACK_TILE_STAIRS.get());
+                        output.accept(AUBlocks.DIRTY_BLACK_TILE_STAIRS.get());
+                        output.accept(AUBlocks.MOSSY_BLACK_TILE_STAIRS.get());
+
+                        output.accept(AUBlocks.CONCRETE_PLATFORM_STAIRS.get());
+                        output.accept(AUBlocks.DIRTY_CONCRETE_PLATFORM_STAIRS.get());
+                        output.accept(AUBlocks.MOSSY_CONCRETE_PLATFORM_STAIRS.get());
+
+                        output.accept(AUBlocks.STEEL_PLATE_STAIRS.get());
+                        output.accept(AUBlocks.SMOOTH_METAL_STAIRS.get());
+
+                        ///////////////////////////////////////////////////////
+
+                        output.accept(AUBlocks.SMALL_WHITE_TILE_SLAB.get());
+                        output.accept(AUBlocks.DIRTY_SMALL_WHITE_TILE_SLAB.get());
+                        output.accept(AUBlocks.MOSSY_SMALL_WHITE_TILE_SLAB.get());
+
+                        output.accept(AUBlocks.WHITE_TILE_SLAB.get());
+                        output.accept(AUBlocks.DIRTY_WHITE_TILE_SLAB.get());
+                        output.accept(AUBlocks.MOSSY_WHITE_TILE_SLAB.get());
+
+                        output.accept(AUBlocks.SMALL_BLACK_TILE_SLAB.get());
+                        output.accept(AUBlocks.DIRTY_SMALL_BLACK_TILE_SLAB.get());
+                        output.accept(AUBlocks.MOSSY_SMALL_BLACK_TILE_SLAB.get());
+
+                        output.accept(AUBlocks.BLACK_TILE_SLAB.get());
+                        output.accept(AUBlocks.DIRTY_BLACK_TILE_SLAB.get());
+                        output.accept(AUBlocks.MOSSY_BLACK_TILE_SLAB.get());
+
+                        output.accept(AUBlocks.CONCRETE_PLATFORM_SLAB.get());
+                        output.accept(AUBlocks.DIRTY_CONCRETE_PLATFORM_SLAB.get());
+                        output.accept(AUBlocks.MOSSY_CONCRETE_PLATFORM_SLAB.get());
+
+                        output.accept(AUBlocks.STEEL_PLATE_SLAB.get());
+                        output.accept(AUBlocks.SMOOTH_METAL_SLAB.get());
 
                     }).build());
 

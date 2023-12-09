@@ -1,6 +1,7 @@
 package com.statecontrolled.abandonedunderground.block;
 
 import java.util.function.Supplier;
+import java.util.logging.Level;
 
 import com.statecontrolled.abandonedunderground.AbandonedUnderground;
 import com.statecontrolled.abandonedunderground.item.AUItems;
@@ -23,7 +24,7 @@ public class AUBlocks {
 
     /*BLOCKS*/
     public static final RegistryObject<Block> SMALL_WHITE_TILES = registerBlock("small_white_tiles",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistryObject<Block> CRACKED_SMALL_WHITE_TILES = registerBlock("cracked_small_white_tiles",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> DIRTY_SMALL_WHITE_TILES = registerBlock("dirty_small_white_tiles",
@@ -144,7 +145,7 @@ public class AUBlocks {
     public static final RegistryObject<Block> SMOOTH_METAL_STAIRS = registerBlock("smooth_metal_stairs",
             () -> new StairBlock(() -> AUBlocks.SMOOTH_METAL_FLOOR.get().defaultBlockState(),
                     BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS)));
-    // TODO add slabs
+
     /*SLABS*/
     public static final RegistryObject<Block> WHITE_TILE_SLAB = registerBlock("white_tile_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB)));

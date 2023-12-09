@@ -1,8 +1,8 @@
 package com.statecontrolled.abandonedunderground.datagen.items;
 
 import com.statecontrolled.abandonedunderground.AbandonedUnderground;
-
 import com.statecontrolled.abandonedunderground.block.AUBlocks;
+
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;

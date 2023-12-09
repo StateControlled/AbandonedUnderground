@@ -1,6 +1,7 @@
 package com.statecontrolled.abandonedunderground.datagen.items;
 
 import java.util.concurrent.CompletableFuture;
+
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;

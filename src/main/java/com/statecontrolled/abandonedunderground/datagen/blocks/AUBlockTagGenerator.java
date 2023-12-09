@@ -1,18 +1,19 @@
 package com.statecontrolled.abandonedunderground.datagen.blocks;
 
+import java.util.concurrent.CompletableFuture;
+
+import org.jetbrains.annotations.Nullable;
+
+import com.statecontrolled.abandonedunderground.AbandonedUnderground;
+import com.statecontrolled.abandonedunderground.block.AUBlocks;
+import com.statecontrolled.abandonedunderground.tags.AUTags;
+
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
-import org.jetbrains.annotations.Nullable;
-
-import java.util.concurrent.CompletableFuture;
-
-import com.statecontrolled.abandonedunderground.AbandonedUnderground;
-import com.statecontrolled.abandonedunderground.block.AUBlocks;
-import com.statecontrolled.abandonedunderground.tags.AUTags;
 
 public class AUBlockTagGenerator extends BlockTagsProvider{
 
