@@ -14,12 +14,25 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.common.util.ITeleporter;
 
+/**
+ * This is not an item, but a helper class for the DimensionalThreadModulatorItem class.<p>
+ * This class handles placing the player in the destination dimension and, if necessary, carving out a valid spawn position.
+ **/
 public class ThreadModulatorTeleporter implements ITeleporter {
-    private static final int MAX_SEARCH_RADIUS = 16;
-    private BlockPos teleporterPosition;
+    private final int MAX_SEARCH_RADIUS;
+    private final BlockPos teleporterPosition;
 
-    public ThreadModulatorTeleporter(BlockPos pos) {
+    /**
+     * This ThreadModulatorTeleporter class handles placing the player in the destination dimension and, if necessary, carving out a valid spawn position.
+     * It is not a physical item or block and only exists as an abstract object.<p>
+     * The {@code pos} parameter is usually the same position where the player will spawn in the destination dimension, but if that location is not safe in
+     * the destination a new location will be found or a safe position will be created by replacing some blocks with {@code AIR}.
+     * @param pos               a starting block position to start the search for a safe spawn position
+     * @param maxSearchRadius   the maximum radius to search for a safe spawn location
+     */
+    public ThreadModulatorTeleporter(BlockPos pos, int maxSearchRadius) {
         this.teleporterPosition = pos;
+        this.MAX_SEARCH_RADIUS = maxSearchRadius;
     }
 
     @Override
@@ -37,6 +50,7 @@ public class ThreadModulatorTeleporter implements ITeleporter {
 
             if (playerSpawnPosition == null) {
                 AbandonedUnderground.LOGGER.log(java.util.logging.Level.WARNING, "Player spawn position is NULL");
+                serverPlayer.teleportTo(teleporterPosition.getX() + 0.5, teleporterPosition.getY() + 1, teleporterPosition.getZ() + 0.5);
                 return e;
             }
             // Teleport the player to the corresponding coordinates in the destination dimension

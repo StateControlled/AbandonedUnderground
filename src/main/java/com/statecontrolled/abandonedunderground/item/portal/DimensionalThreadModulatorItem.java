@@ -26,7 +26,8 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 
 /**
- * This item will transport the player to the custom dimension when right-clicked
+ * The DimensionalThreadModulator item will transport the player between the <i>Overworld</i> and the <i>AbandonedUnderground</i> when right-clicked
+ * This item should be set up to stack to 1 and have infinite durability.
  **/
 public class DimensionalThreadModulatorItem extends Item {
 
@@ -74,7 +75,7 @@ public class DimensionalThreadModulatorItem extends Item {
                     return;
                 }
 
-                player.changeDimension(teleportWorld, new ThreadModulatorTeleporter(blockPosition));
+                player.changeDimension(teleportWorld, new ThreadModulatorTeleporter(blockPosition, 16));
 
             } else if (currentDimension.equals(Level.OVERWORLD)) {
                 ServerLevel teleportWorld = player.server.getLevel(AbandonedUndergroundDimension.ABANDONEDUNDERGROUND_LEVEL);
@@ -84,7 +85,7 @@ public class DimensionalThreadModulatorItem extends Item {
                     return;
                 }
 
-                player.changeDimension(teleportWorld, new ThreadModulatorTeleporter(blockPosition));
+                player.changeDimension(teleportWorld, new ThreadModulatorTeleporter(blockPosition, 16));
 
             } else {
                 player.displayClientMessage(Component.literal("Teleporting from " + currentDimension + " is not supported!"), true);

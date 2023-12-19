@@ -1,8 +1,5 @@
 package com.statecontrolled.abandonedunderground;
 
-import java.util.logging.Level;
-
-import com.statecontrolled.abandonedunderground.AbandonedUnderground;
 import com.statecontrolled.abandonedunderground.block.AUBlocks;
 import com.statecontrolled.abandonedunderground.item.AUItems;
 
@@ -14,6 +11,9 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 
+/**
+ * Sets up the Creative Mode tab for the AbandonedUnderground.
+ **/
 public class AUCreativeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, AbandonedUnderground.MOD_ID);
