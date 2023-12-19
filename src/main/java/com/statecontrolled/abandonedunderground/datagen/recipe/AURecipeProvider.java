@@ -5,6 +5,7 @@ import java.util.function.Consumer;
 
 import com.statecontrolled.abandonedunderground.AbandonedUnderground;
 import com.statecontrolled.abandonedunderground.block.AUBlocks;
+import com.statecontrolled.abandonedunderground.item.AUItems;
 import com.statecontrolled.abandonedunderground.tags.AUTags;
 
 import net.minecraft.data.PackOutput;
@@ -31,6 +32,16 @@ public class AURecipeProvider extends RecipeProvider implements IConditionBuilde
 
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> writer) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, AUItems.DIMENSIONAL_THREAD_MODULATOR.get(), 1)
+                .pattern("GDG")
+                .pattern("DPD")
+                .pattern("GDG")
+                .define('P', Items.GLASS_PANE)
+                .define('D', Items.DIAMOND)
+                .define('G', Items.GLOWSTONE_DUST)
+                .unlockedBy(getHasName(Items.GLOWSTONE_DUST), has(Items.GLOWSTONE_DUST))
+                .save(writer);
+
         /*LIGHT*/
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, AUBlocks.SMOOTH_LIGHT.get(), 8)
                 .pattern("PPP")
