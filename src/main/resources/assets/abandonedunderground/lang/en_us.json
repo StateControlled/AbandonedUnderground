@@ -5,34 +5,37 @@
   "block.abandonedunderground.cracked_small_white_tiles": "Cracked Small White Tiles",
   "block.abandonedunderground.dirty_small_white_tiles": "Dirty Small White Tiles",
   "block.abandonedunderground.mossy_small_white_tiles": "Mossy Small White Tiles",
-  "block.abandonedunderground.chiseled_small_white_tile": "Chiseled Small White Tiles",
+  "block.abandonedunderground.chiseled_small_white_tiles": "Chiseled Small White Tiles",
 
   "block.abandonedunderground.white_tiles": "White Tiles",
   "block.abandonedunderground.cracked_white_tiles": "Cracked White Tiles",
   "block.abandonedunderground.dirty_white_tiles": "Dirty White Tiles",
   "block.abandonedunderground.mossy_white_tiles": "Mossy White Tiles",
-  "block.abandonedunderground.chiseled_white_tile": "Chiseled White Tiles",
+  "block.abandonedunderground.chiseled_white_tiles": "Chiseled White Tiles",
 
   "block.abandonedunderground.small_black_tiles": "Small Black Tiles",
   "block.abandonedunderground.cracked_small_black_tiles": "Cracked Small Black Tiles",
   "block.abandonedunderground.dirty_small_black_tiles": "Dirty Small Black Tiles",
   "block.abandonedunderground.mossy_small_black_tiles": "Mossy Small Black Tiles",
-  "block.abandonedunderground.chiseled_small_black_tile": "Chiseled Small Black Tiles",
+  "block.abandonedunderground.chiseled_small_black_tiles": "Chiseled Small Black Tiles",
 
   "block.abandonedunderground.black_tiles": "Black Tiles",
   "block.abandonedunderground.cracked_black_tiles": "Cracked Black Tiles",
   "block.abandonedunderground.dirty_black_tiles": "Dirty Black Tiles",
   "block.abandonedunderground.mossy_black_tiles": "Mossy Black Tiles",
-  "block.abandonedunderground.chiseled_black_tile": "Chiseled Black Tiles",
+  "block.abandonedunderground.chiseled_black_tiles": "Chiseled Black Tiles",
 
   "block.abandonedunderground.concrete_platform": "Concrete Platform",
   "block.abandonedunderground.cracked_concrete_platform": "Cracked Concrete Platform",
   "block.abandonedunderground.dirty_concrete_platform": "Dirty Concrete Platform",
   "block.abandonedunderground.mossy_concrete_platform": "Mossy Concrete Platform",
-  "block.abandonedunderground.lined_concrete_platform": "Lined Concrete Platform",
+
+  "block.abandonedunderground.concrete_road_double_line": "Concrete Double-Lined Road",
+  "block.abandonedunderground.concrete_road_dashed_line": "Concrete Dash-Lined Road",
+  "block.abandonedunderground.concrete_road_solid_line": "Concrete Lined Road",
 
   "block.abandonedunderground.metal_grate_floor": "Metal Grate Floor",
-  "block.abandonedunderground.steel_floor_plate": "Steel Plate Floor",
+  "block.abandonedunderground.steel_plate_floor": "Steel Plate Floor",
   "block.abandonedunderground.smooth_metal_floor": "Smooth Metal Floor",
 
   "block.abandonedunderground.smooth_light": "Smooth Light",
@@ -80,11 +83,15 @@
   "block.abandonedunderground.dirty_concrete_platform_slab": "Dirty Concrete Platform Slab",
   "block.abandonedunderground.mossy_concrete_platform_slab": "Mossy Concrete Platform Slab",
 
+  "block.abandonedunderground.concrete_road_double_line_slab": "Concrete Road Double Lined Slab",
+  "block.abandonedunderground.concrete_road_dashed_line_slab": "Concrete Road Dashed Lined Slab",
+  "block.abandonedunderground.concrete_road_solid_line_slab": "Concrete Road Solid Lined Slab",
+
   "block.abandonedunderground.steel_plate_slab": "Steel Plate Slab",
   "block.abandonedunderground.smooth_metal_slab": "Smooth Metal Slab",
 
-  "tooltip.abandonedunderground.dimensional_thread_modulator.tooltip.shift": "An item that parses the threads of reality and can move its user between dimensions. But only between two very specific dimensions.\r\nRight-click to shift dimensions. This item will only work in the Overworld and the Abandoned Underground.",
+  "tooltip.abandonedunderground.dimensional_thread_modulator.tooltip.shift": "An item that parses the threads of reality and can move its user between dimensions. But only between two very specific dimensions. Right-click to shift dimensions. This item will only work in the §oOverworld§r and the §oAbandoned Underground§r.",
   "tooltip.abandonedunderground.dimensional_thread_modulator.tooltip": "Press §eSHIFT§r for more Information",
 
-  "creativetab_abandonedunderground_tab": "Abandoned Underground"
+  "creativetab.abandonedunderground_tab": "Abandoned Underground"
 }

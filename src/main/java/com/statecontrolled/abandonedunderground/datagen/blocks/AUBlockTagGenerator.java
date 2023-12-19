@@ -73,7 +73,10 @@ public class AUBlockTagGenerator extends BlockTagsProvider{
                 AUBlocks.CRACKED_CONCRETE_PLATFORM.get(),
                 AUBlocks.DIRTY_CONCRETE_PLATFORM.get(),
                 AUBlocks.MOSSY_CONCRETE_PLATFORM.get(),
-                AUBlocks.LINED_CONCRETE_PLATFORM.get(),
+
+                AUBlocks.CONCRETE_ROAD_DASHED_LINE.get(),
+                AUBlocks.CONCRETE_ROAD_SOLID_LINE.get(),
+                AUBlocks.CONCRETE_ROAD_DOUBLE_LINE.get(),
 
                 AUBlocks.SMOOTH_LIGHT.get(),
 
@@ -117,7 +120,10 @@ public class AUBlockTagGenerator extends BlockTagsProvider{
                 AUBlocks.CRACKED_CONCRETE_PLATFORM.get(),
                 AUBlocks.DIRTY_CONCRETE_PLATFORM.get(),
                 AUBlocks.MOSSY_CONCRETE_PLATFORM.get(),
-                AUBlocks.LINED_CONCRETE_PLATFORM.get(),
+
+                AUBlocks.CONCRETE_ROAD_DASHED_LINE.get(),
+                AUBlocks.CONCRETE_ROAD_SOLID_LINE.get(),
+                AUBlocks.CONCRETE_ROAD_DOUBLE_LINE.get(),
 
                 AUBlocks.METAL_GRATE_FLOOR.get(),
                 AUBlocks.STEEL_PLATE_FLOOR.get(),

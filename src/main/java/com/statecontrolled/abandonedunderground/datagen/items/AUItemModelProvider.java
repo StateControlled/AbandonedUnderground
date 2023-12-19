@@ -46,7 +46,6 @@ public class AUItemModelProvider extends ItemModelProvider {
         registerSimpleBlockItem(AUBlocks.STEEL_PLATE_STAIRS);
         registerSimpleBlockItem(AUBlocks.SMOOTH_METAL_STAIRS);
 
-
         registerSimpleBlockItem(AUBlocks.WHITE_TILE_SLAB);
         registerSimpleBlockItem(AUBlocks.DIRTY_WHITE_TILE_SLAB);
         registerSimpleBlockItem(AUBlocks.MOSSY_WHITE_TILE_SLAB);
@@ -66,6 +65,10 @@ public class AUItemModelProvider extends ItemModelProvider {
         registerSimpleBlockItem(AUBlocks.CONCRETE_PLATFORM_SLAB);
         registerSimpleBlockItem(AUBlocks.DIRTY_CONCRETE_PLATFORM_SLAB);
         registerSimpleBlockItem(AUBlocks.MOSSY_CONCRETE_PLATFORM_SLAB);
+
+        registerSimpleBlockItem(AUBlocks.CONCRETE_ROAD_DOUBLE_LINE_SLAB);
+        registerSimpleBlockItem(AUBlocks.CONCRETE_ROAD_DASHED_LINE_SLAB);
+        registerSimpleBlockItem(AUBlocks.CONCRETE_ROAD_SOLID_LINE_SLAB);
 
         registerSimpleBlockItem(AUBlocks.STEEL_PLATE_SLAB);
         registerSimpleBlockItem(AUBlocks.SMOOTH_METAL_SLAB);

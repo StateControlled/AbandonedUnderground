@@ -52,7 +52,10 @@ public class AUCreativeTabs {
                         output.accept(AUBlocks.CRACKED_CONCRETE_PLATFORM.get());
                         output.accept(AUBlocks.DIRTY_CONCRETE_PLATFORM.get());
                         output.accept(AUBlocks.MOSSY_CONCRETE_PLATFORM.get());
-                        output.accept(AUBlocks.LINED_CONCRETE_PLATFORM.get());
+
+                        output.accept(AUBlocks.CONCRETE_ROAD_DOUBLE_LINE.get());
+                        output.accept(AUBlocks.CONCRETE_ROAD_SOLID_LINE.get());
+                        output.accept(AUBlocks.CONCRETE_ROAD_DASHED_LINE.get());
 
                         output.accept(AUBlocks.SMOOTH_LIGHT.get());
 
@@ -106,6 +109,10 @@ public class AUCreativeTabs {
                         output.accept(AUBlocks.CONCRETE_PLATFORM_SLAB.get());
                         output.accept(AUBlocks.DIRTY_CONCRETE_PLATFORM_SLAB.get());
                         output.accept(AUBlocks.MOSSY_CONCRETE_PLATFORM_SLAB.get());
+
+                        output.accept(AUBlocks.CONCRETE_ROAD_SOLID_LINE_SLAB.get());
+                        output.accept(AUBlocks.CONCRETE_ROAD_DOUBLE_LINE_SLAB.get());
+                        output.accept(AUBlocks.CONCRETE_ROAD_DASHED_LINE_SLAB.get());
 
                         output.accept(AUBlocks.STEEL_PLATE_SLAB.get());
                         output.accept(AUBlocks.SMOOTH_METAL_SLAB.get());

@@ -75,7 +75,12 @@ public class AUBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> MOSSY_CONCRETE_PLATFORM = registerBlock("mossy_concrete_platform",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> LINED_CONCRETE_PLATFORM = registerBlock("lined_concrete_platform",
+
+    public static final RegistryObject<Block> CONCRETE_ROAD_DOUBLE_LINE = registerBlock("concrete_road_double_line",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> CONCRETE_ROAD_DASHED_LINE = registerBlock("concrete_road_dashed_line",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> CONCRETE_ROAD_SOLID_LINE = registerBlock("concrete_road_solid_line",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> SMOOTH_LIGHT = registerBlock("smooth_light",
@@ -180,6 +185,13 @@ public class AUBlocks {
     public static final RegistryObject<Block> DIRTY_CONCRETE_PLATFORM_SLAB = registerBlock("dirty_concrete_platform_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB)));
     public static final RegistryObject<Block> MOSSY_CONCRETE_PLATFORM_SLAB = registerBlock("mossy_concrete_platform_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB)));
+
+    public static final RegistryObject<Block> CONCRETE_ROAD_DOUBLE_LINE_SLAB = registerBlock("concrete_road_double_line_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB)));
+    public static final RegistryObject<Block> CONCRETE_ROAD_DASHED_LINE_SLAB = registerBlock("concrete_road_dashed_line_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB)));
+    public static final RegistryObject<Block> CONCRETE_ROAD_SOLID_LINE_SLAB = registerBlock("concrete_road_solid_line_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB)));
 
     public static final RegistryObject<Block> STEEL_PLATE_SLAB = registerBlock("steel_plate_slab",

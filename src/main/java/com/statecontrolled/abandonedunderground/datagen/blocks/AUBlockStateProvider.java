@@ -47,7 +47,10 @@ public class AUBlockStateProvider extends BlockStateProvider {
         blockWithItem(AUBlocks.CRACKED_CONCRETE_PLATFORM);
         blockWithItem(AUBlocks.DIRTY_CONCRETE_PLATFORM);
         blockWithItem(AUBlocks.MOSSY_CONCRETE_PLATFORM);
-        blockWithItem(AUBlocks.LINED_CONCRETE_PLATFORM);
+
+        blockWithItem(AUBlocks.CONCRETE_ROAD_DASHED_LINE);
+        blockWithItem(AUBlocks.CONCRETE_ROAD_SOLID_LINE);
+        blockWithItem(AUBlocks.CONCRETE_ROAD_DOUBLE_LINE);
 
         blockWithItem(AUBlocks.SMOOTH_LIGHT);
 
@@ -131,6 +134,13 @@ public class AUBlockStateProvider extends BlockStateProvider {
                 blockTexture(AUBlocks.DIRTY_CONCRETE_PLATFORM.get()), blockTexture(AUBlocks.DIRTY_CONCRETE_PLATFORM.get()));
         slabBlock((SlabBlock) AUBlocks.MOSSY_CONCRETE_PLATFORM_SLAB.get(),
                 blockTexture(AUBlocks.MOSSY_CONCRETE_PLATFORM.get()), blockTexture(AUBlocks.MOSSY_CONCRETE_PLATFORM.get()));
+
+        slabBlock((SlabBlock) AUBlocks.CONCRETE_ROAD_DOUBLE_LINE_SLAB.get(),
+                blockTexture(AUBlocks.CONCRETE_ROAD_DOUBLE_LINE.get()), blockTexture(AUBlocks.CONCRETE_ROAD_DOUBLE_LINE.get()));
+        slabBlock((SlabBlock) AUBlocks.CONCRETE_ROAD_DASHED_LINE_SLAB.get(),
+                blockTexture(AUBlocks.CONCRETE_ROAD_DASHED_LINE.get()), blockTexture(AUBlocks.CONCRETE_ROAD_DASHED_LINE.get()));
+        slabBlock((SlabBlock) AUBlocks.CONCRETE_ROAD_SOLID_LINE_SLAB.get(),
+                blockTexture(AUBlocks.CONCRETE_ROAD_SOLID_LINE.get()), blockTexture(AUBlocks.CONCRETE_ROAD_SOLID_LINE.get()));
 
         slabBlock((SlabBlock) AUBlocks.STEEL_PLATE_SLAB.get(),
                 blockTexture(AUBlocks.STEEL_PLATE_FLOOR.get()), blockTexture(AUBlocks.STEEL_PLATE_FLOOR.get()));

@@ -55,7 +55,10 @@ public class AUBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(AUBlocks.CRACKED_CONCRETE_PLATFORM.get());
         this.dropSelf(AUBlocks.DIRTY_CONCRETE_PLATFORM.get());
         this.dropSelf(AUBlocks.MOSSY_CONCRETE_PLATFORM.get());
-        this.dropSelf(AUBlocks.LINED_CONCRETE_PLATFORM.get());
+
+        this.dropSelf(AUBlocks.CONCRETE_ROAD_DASHED_LINE.get());
+        this.dropSelf(AUBlocks.CONCRETE_ROAD_DOUBLE_LINE.get());
+        this.dropSelf(AUBlocks.CONCRETE_ROAD_SOLID_LINE.get());
 
         this.dropSelf(AUBlocks.METAL_GRATE_FLOOR.get());
         this.dropSelf(AUBlocks.STEEL_PLATE_FLOOR.get());
@@ -109,6 +112,10 @@ public class AUBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(AUBlocks.CONCRETE_PLATFORM_SLAB.get());
         this.dropSelf(AUBlocks.DIRTY_CONCRETE_PLATFORM_SLAB.get());
         this.dropSelf(AUBlocks.MOSSY_CONCRETE_PLATFORM_SLAB.get());
+
+        this.dropSelf(AUBlocks.CONCRETE_ROAD_SOLID_LINE_SLAB.get());
+        this.dropSelf(AUBlocks.CONCRETE_ROAD_DOUBLE_LINE_SLAB.get());
+        this.dropSelf(AUBlocks.CONCRETE_ROAD_DASHED_LINE_SLAB.get());
 
         this.dropSelf(AUBlocks.STEEL_PLATE_SLAB.get());
         this.dropSelf(AUBlocks.SMOOTH_METAL_SLAB.get());

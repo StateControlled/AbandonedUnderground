@@ -238,9 +238,27 @@ public class AURecipeProvider extends RecipeProvider implements IConditionBuilde
                 .unlockedBy(getHasName(AUBlocks.CONCRETE_PLATFORM.get()), has(AUBlocks.CONCRETE_PLATFORM.get()))
                 .save(writer);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, AUBlocks.LINED_CONCRETE_PLATFORM.get(), 8)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, AUBlocks.CONCRETE_ROAD_SOLID_LINE.get(), 8)
+                .pattern("CYC")
+                .pattern("CYC")
+                .pattern("CYC")
+                .define('C', AUBlocks.CONCRETE_PLATFORM.get())
+                .define('Y', Items.YELLOW_DYE)
+                .unlockedBy(getHasName(AUBlocks.CONCRETE_PLATFORM.get()), has(AUBlocks.CONCRETE_PLATFORM.get()))
+                .save(writer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, AUBlocks.CONCRETE_ROAD_DASHED_LINE.get(), 8)
+                .pattern("CYC")
                 .pattern("CCC")
                 .pattern("CYC")
+                .define('C', AUBlocks.CONCRETE_PLATFORM.get())
+                .define('Y', Items.YELLOW_DYE)
+                .unlockedBy(getHasName(AUBlocks.CONCRETE_PLATFORM.get()), has(AUBlocks.CONCRETE_PLATFORM.get()))
+                .save(writer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, AUBlocks.CONCRETE_ROAD_DOUBLE_LINE.get(), 8)
+                .pattern("CCC")
+                .pattern("YCY")
                 .pattern("CCC")
                 .define('C', AUBlocks.CONCRETE_PLATFORM.get())
                 .define('Y', Items.YELLOW_DYE)
