@@ -1,7 +1,13 @@
 package com.statecontrolled.abandonedunderground;
 
+import java.io.IOException;
+import java.util.UUID;
+import java.util.logging.FileHandler;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import java.util.logging.SimpleFormatter;
+
 import com.statecontrolled.abandonedunderground.block.AUBlocks;
-import com.statecontrolled.abandonedunderground.item.AUCreativeTabs;
 import com.statecontrolled.abandonedunderground.item.AUItems;
 
 import net.minecraftforge.api.distmarker.Dist;
@@ -18,6 +24,20 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 @Mod(AbandonedUnderground.MOD_ID)
 public class AbandonedUnderground {
     public static final String MOD_ID = "abandonedunderground";
+    public static final Logger LOGGER = Logger.getLogger(AbandonedUnderground.class.getName());
+
+    static {
+        try {
+            FileHandler fileHandler = new FileHandler("abandoned_underground.log", false);
+            fileHandler.setFormatter(new SimpleFormatter());
+            LOGGER.addHandler(fileHandler);
+            LOGGER.setLevel(Level.FINE);
+            String ID = UUID.randomUUID().toString();
+            LOGGER.log(Level.INFO, ID + " : Init Logger");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
 
     public AbandonedUnderground() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();

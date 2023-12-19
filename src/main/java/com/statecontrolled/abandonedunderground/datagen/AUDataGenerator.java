@@ -9,6 +9,7 @@ import com.statecontrolled.abandonedunderground.datagen.items.AUItemModelProvide
 import com.statecontrolled.abandonedunderground.datagen.items.AUItemTagGenerator;
 import com.statecontrolled.abandonedunderground.datagen.loot.AULootTableProvider;
 import com.statecontrolled.abandonedunderground.datagen.recipe.AURecipeProvider;
+import com.statecontrolled.abandonedunderground.datagen.worldgen.AUWorldGenerationProvider;
 
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
@@ -36,6 +37,8 @@ public class AUDataGenerator {
 
         generator.addProvider(event.includeClient(), new AUBlockStateProvider(packOutput, existingFileHelper));
         generator.addProvider(event.includeClient(), new AUItemModelProvider(packOutput, existingFileHelper));
+
+        generator.addProvider(event.includeServer(), new AUWorldGenerationProvider(packOutput, lookupProvider));
 
         AUBlockTagGenerator blockTagGenerator = generator.addProvider(event.includeServer(),
             new AUBlockTagGenerator(packOutput, lookupProvider, existingFileHelper)

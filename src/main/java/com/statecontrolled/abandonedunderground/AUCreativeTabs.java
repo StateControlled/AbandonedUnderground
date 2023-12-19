@@ -1,9 +1,10 @@
-package com.statecontrolled.abandonedunderground.item;
+package com.statecontrolled.abandonedunderground;
 
 import java.util.logging.Level;
 
 import com.statecontrolled.abandonedunderground.AbandonedUnderground;
 import com.statecontrolled.abandonedunderground.block.AUBlocks;
+import com.statecontrolled.abandonedunderground.item.AUItems;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -21,6 +22,8 @@ public class AUCreativeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(AUBlocks.SMALL_WHITE_TILES.get()))
                     .title(Component.translatable("creativetab.abandonedunderground_tab"))
                     .displayItems((displayParameters, output) -> {
+                        output.accept(AUItems.DIMENSIONAL_THREAD_MODULATOR.get());
+
                         output.accept(AUBlocks.SMALL_WHITE_TILES.get());
                         output.accept(AUBlocks.CRACKED_SMALL_WHITE_TILES.get());
                         output.accept(AUBlocks.DIRTY_SMALL_WHITE_TILES.get());

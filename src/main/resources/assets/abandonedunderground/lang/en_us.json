@@ -1,4 +1,6 @@
 {
+  "item.abandonedunderground.dimensional_thread_modulator": "Dimensional Thread Modulator",
+
   "block.abandonedunderground.small_white_tiles": "Small White Tiles",
   "block.abandonedunderground.cracked_small_white_tiles": "Cracked Small White Tiles",
   "block.abandonedunderground.dirty_small_white_tiles": "Dirty Small White Tiles",
@@ -81,6 +83,8 @@
   "block.abandonedunderground.steel_plate_slab": "Steel Plate Slab",
   "block.abandonedunderground.smooth_metal_slab": "Smooth Metal Slab",
 
+  "tooltip.abandonedunderground.dimensional_thread_modulator.tooltip.shift": "An item that parses the threads of reality and can move its user between dimensions. But only between two very specific dimensions.\r\nRight-click to shift dimensions. This item will only work in the Overworld and the Abandoned Underground.",
+  "tooltip.abandonedunderground.dimensional_thread_modulator.tooltip": "Press §eSHIFT§r for more Information",
 
   "creativetab_abandonedunderground_tab": "Abandoned Underground"
 }

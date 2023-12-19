@@ -2,6 +2,7 @@ package com.statecontrolled.abandonedunderground.datagen.items;
 
 import com.statecontrolled.abandonedunderground.AbandonedUnderground;
 import com.statecontrolled.abandonedunderground.block.AUBlocks;
+import com.statecontrolled.abandonedunderground.item.AUItems;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
@@ -20,6 +21,8 @@ public class AUItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
+        registerSimpleItem(AUItems.DIMENSIONAL_THREAD_MODULATOR);
+
         registerSimpleBlockItem(AUBlocks.WHITE_TILE_STAIRS);
         registerSimpleBlockItem(AUBlocks.MOSSY_WHITE_TILE_STAIRS);
         registerSimpleBlockItem(AUBlocks.DIRTY_WHITE_TILE_STAIRS);
