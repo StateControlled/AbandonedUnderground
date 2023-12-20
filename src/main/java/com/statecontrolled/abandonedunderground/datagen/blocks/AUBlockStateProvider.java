@@ -53,20 +53,20 @@ public class AUBlockStateProvider extends BlockStateProvider {
         // block side front top
         auBlockItem(AUBlocks.CONCRETE_ROAD_DASHED_LINE);
         horizontalBlock(AUBlocks.CONCRETE_ROAD_DASHED_LINE.get(),           // block
-                blockTexture(AUBlocks.CONCRETE_PLATFORM.get()),     // side
-                blockTexture(AUBlocks.CONCRETE_ROAD_DASHED_LINE.get()),     // front
+                blockTexture(AUBlocks.CONCRETE_PLATFORM.get()),             // side
+                blockTexture(AUBlocks.CONCRETE_PLATFORM.get()),             // front
                 blockTexture(AUBlocks.CONCRETE_ROAD_DASHED_LINE.get()));    // top
 
         auBlockItem(AUBlocks.CONCRETE_ROAD_SOLID_LINE);
         horizontalBlock(AUBlocks.CONCRETE_ROAD_SOLID_LINE.get(),
-                blockTexture(AUBlocks.CONCRETE_ROAD_SOLID_LINE.get()),
-                blockTexture(AUBlocks.CONCRETE_ROAD_SOLID_LINE.get()),
+                blockTexture(AUBlocks.CONCRETE_PLATFORM.get()),
+                blockTexture(AUBlocks.CONCRETE_PLATFORM.get()),
                 blockTexture(AUBlocks.CONCRETE_ROAD_SOLID_LINE.get()));
 
         auBlockItem(AUBlocks.CONCRETE_ROAD_DOUBLE_LINE);
         horizontalBlock(AUBlocks.CONCRETE_ROAD_DOUBLE_LINE.get(),
-                blockTexture(AUBlocks.CONCRETE_ROAD_DOUBLE_LINE.get()),
-                blockTexture(AUBlocks.CONCRETE_ROAD_DOUBLE_LINE.get()),
+                blockTexture(AUBlocks.CONCRETE_PLATFORM.get()),
+                blockTexture(AUBlocks.CONCRETE_PLATFORM.get()),
                 blockTexture(AUBlocks.CONCRETE_ROAD_DOUBLE_LINE.get()));
 
         auSimpleCubicBlock(AUBlocks.SMOOTH_LIGHT);

@@ -93,5 +93,16 @@
   "tooltip.abandonedunderground.dimensional_thread_modulator.tooltip.shift": "An item that parses the threads of reality and can move its user between dimensions. But only between two very specific dimensions. Right-click to shift dimensions. This item will only work in the §oOverworld§r and the §oAbandoned Underground§r.",
   "tooltip.abandonedunderground.dimensional_thread_modulator.tooltip": "Press §eSHIFT§r for more Information",
 
+  "painting.abandonedunderground.control_panel_1.title": "Control Panel 1",
+  "painting.abandonedunderground.control_panel_1.author": "StateControlled",
+  "painting.abandonedunderground.control_panel_2.title": "Control Panel 2",
+  "painting.abandonedunderground.control_panel_2.author": "StateControlled",
+  "painting.abandonedunderground.control_panel_3.title": "Control Panel 3",
+  "painting.abandonedunderground.control_panel_3.author": "StateControlled",
+  "painting.abandonedunderground.control_panel_4.title": "Control Panel 4",
+  "painting.abandonedunderground.control_panel_4.author": "StateControlled",
+  "painting.abandonedunderground.control_panel_5.title": "Control Panel 5",
+  "painting.abandonedunderground.control_panel_5.author": "StateControlled",
+
   "creativetab.abandonedunderground_tab": "Abandoned Underground"
 }

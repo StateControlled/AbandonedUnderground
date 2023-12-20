@@ -7,6 +7,7 @@ import com.statecontrolled.abandonedunderground.datagen.blocks.AUBlockStateProvi
 import com.statecontrolled.abandonedunderground.datagen.blocks.AUBlockTagGenerator;
 import com.statecontrolled.abandonedunderground.datagen.items.AUItemModelProvider;
 import com.statecontrolled.abandonedunderground.datagen.items.AUItemTagGenerator;
+import com.statecontrolled.abandonedunderground.datagen.painting.AUPaintingVariantTagProvider;
 import com.statecontrolled.abandonedunderground.datagen.loot.AULootTableProvider;
 import com.statecontrolled.abandonedunderground.datagen.recipe.AURecipeProvider;
 import com.statecontrolled.abandonedunderground.datagen.worldgen.AUWorldGenerationProvider;
@@ -39,6 +40,7 @@ public class AUDataGenerator {
         generator.addProvider(event.includeClient(), new AUItemModelProvider(packOutput, existingFileHelper));
 
         generator.addProvider(event.includeServer(), new AUWorldGenerationProvider(packOutput, lookupProvider));
+        generator.addProvider(event.includeClient(), new AUPaintingVariantTagProvider(packOutput, lookupProvider, existingFileHelper));
 
         AUBlockTagGenerator blockTagGenerator = generator.addProvider(event.includeServer(),
             new AUBlockTagGenerator(packOutput, lookupProvider, existingFileHelper)

@@ -9,10 +9,10 @@ import java.util.logging.SimpleFormatter;
 
 import com.statecontrolled.abandonedunderground.block.AUBlocks;
 import com.statecontrolled.abandonedunderground.item.AUItems;
+import com.statecontrolled.abandonedunderground.item.painting.AUPaintings;
 
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -51,23 +51,13 @@ public class AbandonedUnderground {
         AUCreativeTabs.register(modEventBus);
         AUBlocks.register(modEventBus);
         AUItems.register(modEventBus);
+        AUPaintings.register(modEventBus);
 
-        // Register the commonSetup method for modloading
-        modEventBus.addListener(this::commonSetup);
-        // Register ourselves for server and other game events
+        // Register for server and other game events
         MinecraftForge.EVENT_BUS.register(this);
-        // Register the item to a creative tab
-        modEventBus.addListener(this::addCreative);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-        ;
-    }
-
-    /**
-     * Add items to existing creative mode tabs
-     **/
-    private void addCreative(BuildCreativeModeTabContentsEvent event) {
         ;
     }
 
