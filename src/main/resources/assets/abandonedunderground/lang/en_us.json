@@ -104,5 +104,8 @@
   "painting.abandonedunderground.control_panel_5.title": "Control Panel 5",
   "painting.abandonedunderground.control_panel_5.author": "StateControlled",
 
+  "advancement.abandonedunderground.root": "Abandoned Underground",
+  "advancement.abandonedunderground.root.description": "Dimensional Thread Modulator is just a fancy name for a teleporter.",
+
   "creativetab.abandonedunderground_tab": "Abandoned Underground"
 }
