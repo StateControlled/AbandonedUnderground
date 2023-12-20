@@ -10,6 +10,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -80,11 +81,11 @@ public class AUBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> CONCRETE_ROAD_DOUBLE_LINE = registerBlock("concrete_road_double_line",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
+            () -> new AUHorizontalBlock(BlockBehaviour.Properties.copy(Blocks.BLACK_TERRACOTTA).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> CONCRETE_ROAD_DASHED_LINE = registerBlock("concrete_road_dashed_line",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
+            () -> new AUHorizontalBlock(BlockBehaviour.Properties.copy(Blocks.BLACK_TERRACOTTA).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> CONCRETE_ROAD_SOLID_LINE = registerBlock("concrete_road_solid_line",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
+            () -> new AUHorizontalBlock(BlockBehaviour.Properties.copy(Blocks.BLACK_TERRACOTTA).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> SMOOTH_LIGHT = registerBlock("smooth_light",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).requiresCorrectToolForDrops()));

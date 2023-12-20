@@ -8,7 +8,9 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.StairBlock;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 public class AUBlockStateProvider extends BlockStateProvider {
@@ -19,44 +21,59 @@ public class AUBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        blockWithItem(AUBlocks.SMALL_WHITE_TILES);
-        blockWithItem(AUBlocks.CRACKED_SMALL_WHITE_TILES);
-        blockWithItem(AUBlocks.DIRTY_SMALL_WHITE_TILES);
-        blockWithItem(AUBlocks.MOSSY_SMALL_WHITE_TILES);
-        blockWithItem(AUBlocks.CHISELED_SMALL_WHITE_TILES);
+        auSimpleCubicBlock(AUBlocks.SMALL_WHITE_TILES);
+        auSimpleCubicBlock(AUBlocks.CRACKED_SMALL_WHITE_TILES);
+        auSimpleCubicBlock(AUBlocks.DIRTY_SMALL_WHITE_TILES);
+        auSimpleCubicBlock(AUBlocks.MOSSY_SMALL_WHITE_TILES);
+        auSimpleCubicBlock(AUBlocks.CHISELED_SMALL_WHITE_TILES);
 
-        blockWithItem(AUBlocks.WHITE_TILES);
-        blockWithItem(AUBlocks.CRACKED_WHITE_TILES);
-        blockWithItem(AUBlocks.DIRTY_WHITE_TILES);
-        blockWithItem(AUBlocks.MOSSY_WHITE_TILES);
-        blockWithItem(AUBlocks.CHISELED_WHITE_TILES);
+        auSimpleCubicBlock(AUBlocks.WHITE_TILES);
+        auSimpleCubicBlock(AUBlocks.CRACKED_WHITE_TILES);
+        auSimpleCubicBlock(AUBlocks.DIRTY_WHITE_TILES);
+        auSimpleCubicBlock(AUBlocks.MOSSY_WHITE_TILES);
+        auSimpleCubicBlock(AUBlocks.CHISELED_WHITE_TILES);
 
-        blockWithItem(AUBlocks.SMALL_BLACK_TILES);
-        blockWithItem(AUBlocks.CRACKED_SMALL_BLACK_TILES);
-        blockWithItem(AUBlocks.DIRTY_SMALL_BLACK_TILES);
-        blockWithItem(AUBlocks.MOSSY_SMALL_BLACK_TILES);
-        blockWithItem(AUBlocks.CHISELED_SMALL_BLACK_TILES);
+        auSimpleCubicBlock(AUBlocks.SMALL_BLACK_TILES);
+        auSimpleCubicBlock(AUBlocks.CRACKED_SMALL_BLACK_TILES);
+        auSimpleCubicBlock(AUBlocks.DIRTY_SMALL_BLACK_TILES);
+        auSimpleCubicBlock(AUBlocks.MOSSY_SMALL_BLACK_TILES);
+        auSimpleCubicBlock(AUBlocks.CHISELED_SMALL_BLACK_TILES);
 
-        blockWithItem(AUBlocks.BLACK_TILES);
-        blockWithItem(AUBlocks.CRACKED_BLACK_TILES);
-        blockWithItem(AUBlocks.DIRTY_BLACK_TILES);
-        blockWithItem(AUBlocks.MOSSY_BLACK_TILES);
-        blockWithItem(AUBlocks.CHISELED_BLACK_TILES);
+        auSimpleCubicBlock(AUBlocks.BLACK_TILES);
+        auSimpleCubicBlock(AUBlocks.CRACKED_BLACK_TILES);
+        auSimpleCubicBlock(AUBlocks.DIRTY_BLACK_TILES);
+        auSimpleCubicBlock(AUBlocks.MOSSY_BLACK_TILES);
+        auSimpleCubicBlock(AUBlocks.CHISELED_BLACK_TILES);
 
-        blockWithItem(AUBlocks.CONCRETE_PLATFORM);
-        blockWithItem(AUBlocks.CRACKED_CONCRETE_PLATFORM);
-        blockWithItem(AUBlocks.DIRTY_CONCRETE_PLATFORM);
-        blockWithItem(AUBlocks.MOSSY_CONCRETE_PLATFORM);
+        auSimpleCubicBlock(AUBlocks.CONCRETE_PLATFORM);
+        auSimpleCubicBlock(AUBlocks.CRACKED_CONCRETE_PLATFORM);
+        auSimpleCubicBlock(AUBlocks.DIRTY_CONCRETE_PLATFORM);
+        auSimpleCubicBlock(AUBlocks.MOSSY_CONCRETE_PLATFORM);
 
-        blockWithItem(AUBlocks.CONCRETE_ROAD_DASHED_LINE);
-        blockWithItem(AUBlocks.CONCRETE_ROAD_SOLID_LINE);
-        blockWithItem(AUBlocks.CONCRETE_ROAD_DOUBLE_LINE);
+        // block side front top
+        auBlockItem(AUBlocks.CONCRETE_ROAD_DASHED_LINE);
+        horizontalBlock(AUBlocks.CONCRETE_ROAD_DASHED_LINE.get(),           // block
+                blockTexture(AUBlocks.CONCRETE_PLATFORM.get()),     // side
+                blockTexture(AUBlocks.CONCRETE_ROAD_DASHED_LINE.get()),     // front
+                blockTexture(AUBlocks.CONCRETE_ROAD_DASHED_LINE.get()));    // top
 
-        blockWithItem(AUBlocks.SMOOTH_LIGHT);
+        auBlockItem(AUBlocks.CONCRETE_ROAD_SOLID_LINE);
+        horizontalBlock(AUBlocks.CONCRETE_ROAD_SOLID_LINE.get(),
+                blockTexture(AUBlocks.CONCRETE_ROAD_SOLID_LINE.get()),
+                blockTexture(AUBlocks.CONCRETE_ROAD_SOLID_LINE.get()),
+                blockTexture(AUBlocks.CONCRETE_ROAD_SOLID_LINE.get()));
 
-        blockWithItem(AUBlocks.METAL_GRATE_FLOOR);
-        blockWithItem(AUBlocks.STEEL_PLATE_FLOOR);
-        blockWithItem(AUBlocks.SMOOTH_METAL_FLOOR);
+        auBlockItem(AUBlocks.CONCRETE_ROAD_DOUBLE_LINE);
+        horizontalBlock(AUBlocks.CONCRETE_ROAD_DOUBLE_LINE.get(),
+                blockTexture(AUBlocks.CONCRETE_ROAD_DOUBLE_LINE.get()),
+                blockTexture(AUBlocks.CONCRETE_ROAD_DOUBLE_LINE.get()),
+                blockTexture(AUBlocks.CONCRETE_ROAD_DOUBLE_LINE.get()));
+
+        auSimpleCubicBlock(AUBlocks.SMOOTH_LIGHT);
+
+        auSimpleCubicBlock(AUBlocks.METAL_GRATE_FLOOR);
+        auSimpleCubicBlock(AUBlocks.STEEL_PLATE_FLOOR);
+        auSimpleCubicBlock(AUBlocks.SMOOTH_METAL_FLOOR);
 
         stairsBlock((StairBlock) AUBlocks.WHITE_TILE_STAIRS.get(),
                 blockTexture(AUBlocks.WHITE_TILES.get()));
@@ -146,9 +163,18 @@ public class AUBlockStateProvider extends BlockStateProvider {
                 blockTexture(AUBlocks.STEEL_PLATE_FLOOR.get()), blockTexture(AUBlocks.STEEL_PLATE_FLOOR.get()));
         slabBlock((SlabBlock) AUBlocks.SMOOTH_METAL_SLAB.get(),
                 blockTexture(AUBlocks.SMOOTH_METAL_FLOOR.get()), blockTexture(AUBlocks.SMOOTH_METAL_FLOOR.get()));
+
     }
 
-    private void blockWithItem(RegistryObject<Block> block) {
+    protected void auSimpleCubicBlock(RegistryObject<Block> block) {
         simpleBlockWithItem(block.get(), cubeAll(block.get()));
+    }
+
+    protected void auBlockItem(RegistryObject<Block> block) {
+        simpleBlockItem(block.get(), new ModelFile.UncheckedModelFile("abandonedunderground:block/" + blockPathHelper(block)));
+    }
+
+    private String blockPathHelper(RegistryObject<Block> registryBlockObject) {
+        return ForgeRegistries.BLOCKS.getKey(registryBlockObject.get()).getPath();
     }
 }
