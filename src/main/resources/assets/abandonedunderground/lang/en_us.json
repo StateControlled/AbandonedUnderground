@@ -106,6 +106,8 @@
 
   "advancement.abandonedunderground.root": "Abandoned Underground",
   "advancement.abandonedunderground.root.description": "Dimensional Thread Modulator is just a fancy name for a teleporter.",
+  "advancement.abandonedunderground.dim": "Exploration",
+  "advancement.abandonedunderground.dim.description": "Enter the Abandoned Underground",
 
   "creativetab.abandonedunderground_tab": "Abandoned Underground"
 }
