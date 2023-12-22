@@ -104,22 +104,22 @@ public class AUBlockStateProvider extends BlockStateProvider {
         auSimpleCubicBlock(AUBlocks.MOSSY_SIDEWALK_PANEL);
         auSimpleCubicBlock(AUBlocks.DIRTY_SIDEWALK_PANEL);
 
-        auSimpleCubicBlock(AUBlocks.FLUORESCENT_LIGHT_BLACK);
-        auSimpleCubicBlock(AUBlocks.FLUORESCENT_LIGHT_BLUE);
-        auSimpleCubicBlock(AUBlocks.FLUORESCENT_LIGHT_BROWN);
-        auSimpleCubicBlock(AUBlocks.FLUORESCENT_LIGHT_CYAN);
-        auSimpleCubicBlock(AUBlocks.FLUORESCENT_LIGHT_GRAY);
-        auSimpleCubicBlock(AUBlocks.FLUORESCENT_LIGHT_GREEN);
-        auSimpleCubicBlock(AUBlocks.FLUORESCENT_LIGHT_LIGHT_BLUE);
-        auSimpleCubicBlock(AUBlocks.FLUORESCENT_LIGHT_LIGHT_GRAY);
-        auSimpleCubicBlock(AUBlocks.FLUORESCENT_LIGHT_LIME);
-        auSimpleCubicBlock(AUBlocks.FLUORESCENT_LIGHT_MAGENTA);
-        auSimpleCubicBlock(AUBlocks.FLUORESCENT_LIGHT_ORANGE);
-        auSimpleCubicBlock(AUBlocks.FLUORESCENT_LIGHT_PINK);
-        auSimpleCubicBlock(AUBlocks.FLUORESCENT_LIGHT_PURPLE);
-        auSimpleCubicBlock(AUBlocks.FLUORESCENT_LIGHT_RED);
-        auSimpleCubicBlock(AUBlocks.FLUORESCENT_LIGHT_WHITE);
-        auSimpleCubicBlock(AUBlocks.FLUORESCENT_LIGHT_YELLOW);
+        auSimpleCubicBlock(AUBlocks.BLACK_FLUORESCENT_LIGHT);
+        auSimpleCubicBlock(AUBlocks.BLUE_FLUORESCENT_LIGHT);
+        auSimpleCubicBlock(AUBlocks.BROWN_FLUORESCENT_LIGHT);
+        auSimpleCubicBlock(AUBlocks.CYAN_FLUORESCENT_LIGHT);
+        auSimpleCubicBlock(AUBlocks.GRAY_FLUORESCENT_LIGHT);
+        auSimpleCubicBlock(AUBlocks.GREEN_FLUORESCENT_LIGHT);
+        auSimpleCubicBlock(AUBlocks.LIGHT_BLUE_FLUORESCENT_LIGHT);
+        auSimpleCubicBlock(AUBlocks.LIGHT_GRAY_FLUORESCENT_LIGHT);
+        auSimpleCubicBlock(AUBlocks.LIME_FLUORESCENT_LIGHT);
+        auSimpleCubicBlock(AUBlocks.MAGENTA_FLUORESCENT_LIGHT);
+        auSimpleCubicBlock(AUBlocks.ORANGE_FLUORESCENT_LIGHT);
+        auSimpleCubicBlock(AUBlocks.PINK_FLUORESCENT_LIGHT);
+        auSimpleCubicBlock(AUBlocks.PURPLE_FLUORESCENT_LIGHT);
+        auSimpleCubicBlock(AUBlocks.RED_FLUORESCENT_LIGHT);
+        auSimpleCubicBlock(AUBlocks.WHITE_FLUORESCENT_LIGHT);
+        auSimpleCubicBlock(AUBlocks.YELLOW_FLUORESCENT_LIGHT);
 
         stairsBlock((StairBlock) AUBlocks.WHITE_TILE_STAIRS.get(),
                 blockTexture(AUBlocks.WHITE_TILES.get()));

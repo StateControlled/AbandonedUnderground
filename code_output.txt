@@ -1,0 +1,101 @@
+public static final RegistryObject<Block> BLACK_FLUORESCENT_LIGHT = registerBlock("black_fluorescent_light", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
+public static final RegistryObject<Block> BLUE_FLUORESCENT_LIGHT = registerBlock("blue_fluorescent_light", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
+public static final RegistryObject<Block> BROWN_FLUORESCENT_LIGHT = registerBlock("brown_fluorescent_light", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
+public static final RegistryObject<Block> CYAN_FLUORESCENT_LIGHT = registerBlock("cyan_fluorescent_light", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
+public static final RegistryObject<Block> GRAY_FLUORESCENT_LIGHT = registerBlock("gray_fluorescent_light", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
+public static final RegistryObject<Block> GREEN_FLUORESCENT_LIGHT = registerBlock("green_fluorescent_light", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
+public static final RegistryObject<Block> LIGHT_BLUE_FLUORESCENT_LIGHT = registerBlock("light_blue_fluorescent_light", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
+public static final RegistryObject<Block> LIGHT_GRAY_FLUORESCENT_LIGHT = registerBlock("light_gray_fluorescent_light", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
+public static final RegistryObject<Block> LIME_FLUORESCENT_LIGHT = registerBlock("lime_fluorescent_light", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
+public static final RegistryObject<Block> MAGENTA_FLUORESCENT_LIGHT = registerBlock("magenta_fluorescent_light", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
+public static final RegistryObject<Block> ORANGE_FLUORESCENT_LIGHT = registerBlock("orange_fluorescent_light", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
+public static final RegistryObject<Block> PINK_FLUORESCENT_LIGHT = registerBlock("pink_fluorescent_light", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
+public static final RegistryObject<Block> PURPLE_FLUORESCENT_LIGHT = registerBlock("purple_fluorescent_light", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
+public static final RegistryObject<Block> RED_FLUORESCENT_LIGHT = registerBlock("red_fluorescent_light", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
+public static final RegistryObject<Block> WHITE_FLUORESCENT_LIGHT = registerBlock("white_fluorescent_light", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
+public static final RegistryObject<Block> YELLOW_FLUORESCENT_LIGHT = registerBlock("yellow_fluorescent_light", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
+
+auSimpleCubicBlock(AUBlocks.BLACK_FLUORESCENT_LIGHT);
+auSimpleCubicBlock(AUBlocks.BLUE_FLUORESCENT_LIGHT);
+auSimpleCubicBlock(AUBlocks.BROWN_FLUORESCENT_LIGHT);
+auSimpleCubicBlock(AUBlocks.CYAN_FLUORESCENT_LIGHT);
+auSimpleCubicBlock(AUBlocks.GRAY_FLUORESCENT_LIGHT);
+auSimpleCubicBlock(AUBlocks.GREEN_FLUORESCENT_LIGHT);
+auSimpleCubicBlock(AUBlocks.LIGHT_BLUE_FLUORESCENT_LIGHT);
+auSimpleCubicBlock(AUBlocks.LIGHT_GRAY_FLUORESCENT_LIGHT);
+auSimpleCubicBlock(AUBlocks.LIME_FLUORESCENT_LIGHT);
+auSimpleCubicBlock(AUBlocks.MAGENTA_FLUORESCENT_LIGHT);
+auSimpleCubicBlock(AUBlocks.ORANGE_FLUORESCENT_LIGHT);
+auSimpleCubicBlock(AUBlocks.PINK_FLUORESCENT_LIGHT);
+auSimpleCubicBlock(AUBlocks.PURPLE_FLUORESCENT_LIGHT);
+auSimpleCubicBlock(AUBlocks.RED_FLUORESCENT_LIGHT);
+auSimpleCubicBlock(AUBlocks.WHITE_FLUORESCENT_LIGHT);
+auSimpleCubicBlock(AUBlocks.YELLOW_FLUORESCENT_LIGHT);
+
+AUBlocks.BLACK_FLUORESCENT_LIGHT.get(),
+AUBlocks.BLUE_FLUORESCENT_LIGHT.get(),
+AUBlocks.BROWN_FLUORESCENT_LIGHT.get(),
+AUBlocks.CYAN_FLUORESCENT_LIGHT.get(),
+AUBlocks.GRAY_FLUORESCENT_LIGHT.get(),
+AUBlocks.GREEN_FLUORESCENT_LIGHT.get(),
+AUBlocks.LIGHT_BLUE_FLUORESCENT_LIGHT.get(),
+AUBlocks.LIGHT_GRAY_FLUORESCENT_LIGHT.get(),
+AUBlocks.LIME_FLUORESCENT_LIGHT.get(),
+AUBlocks.MAGENTA_FLUORESCENT_LIGHT.get(),
+AUBlocks.ORANGE_FLUORESCENT_LIGHT.get(),
+AUBlocks.PINK_FLUORESCENT_LIGHT.get(),
+AUBlocks.PURPLE_FLUORESCENT_LIGHT.get(),
+AUBlocks.RED_FLUORESCENT_LIGHT.get(),
+AUBlocks.WHITE_FLUORESCENT_LIGHT.get(),
+AUBlocks.YELLOW_FLUORESCENT_LIGHT.get(),
+
+output.accept(AUBlocks.BLACK_FLUORESCENT_LIGHT.get());
+output.accept(AUBlocks.BLUE_FLUORESCENT_LIGHT.get());
+output.accept(AUBlocks.BROWN_FLUORESCENT_LIGHT.get());
+output.accept(AUBlocks.CYAN_FLUORESCENT_LIGHT.get());
+output.accept(AUBlocks.GRAY_FLUORESCENT_LIGHT.get());
+output.accept(AUBlocks.GREEN_FLUORESCENT_LIGHT.get());
+output.accept(AUBlocks.LIGHT_BLUE_FLUORESCENT_LIGHT.get());
+output.accept(AUBlocks.LIGHT_GRAY_FLUORESCENT_LIGHT.get());
+output.accept(AUBlocks.LIME_FLUORESCENT_LIGHT.get());
+output.accept(AUBlocks.MAGENTA_FLUORESCENT_LIGHT.get());
+output.accept(AUBlocks.ORANGE_FLUORESCENT_LIGHT.get());
+output.accept(AUBlocks.PINK_FLUORESCENT_LIGHT.get());
+output.accept(AUBlocks.PURPLE_FLUORESCENT_LIGHT.get());
+output.accept(AUBlocks.RED_FLUORESCENT_LIGHT.get());
+output.accept(AUBlocks.WHITE_FLUORESCENT_LIGHT.get());
+output.accept(AUBlocks.YELLOW_FLUORESCENT_LIGHT.get());
+
+this.dropSelf(AUBlocks.BLACK_FLUORESCENT_LIGHT.get());
+this.dropSelf(AUBlocks.BLUE_FLUORESCENT_LIGHT.get());
+this.dropSelf(AUBlocks.BROWN_FLUORESCENT_LIGHT.get());
+this.dropSelf(AUBlocks.CYAN_FLUORESCENT_LIGHT.get());
+this.dropSelf(AUBlocks.GRAY_FLUORESCENT_LIGHT.get());
+this.dropSelf(AUBlocks.GREEN_FLUORESCENT_LIGHT.get());
+this.dropSelf(AUBlocks.LIGHT_BLUE_FLUORESCENT_LIGHT.get());
+this.dropSelf(AUBlocks.LIGHT_GRAY_FLUORESCENT_LIGHT.get());
+this.dropSelf(AUBlocks.LIME_FLUORESCENT_LIGHT.get());
+this.dropSelf(AUBlocks.MAGENTA_FLUORESCENT_LIGHT.get());
+this.dropSelf(AUBlocks.ORANGE_FLUORESCENT_LIGHT.get());
+this.dropSelf(AUBlocks.PINK_FLUORESCENT_LIGHT.get());
+this.dropSelf(AUBlocks.PURPLE_FLUORESCENT_LIGHT.get());
+this.dropSelf(AUBlocks.RED_FLUORESCENT_LIGHT.get());
+this.dropSelf(AUBlocks.WHITE_FLUORESCENT_LIGHT.get());
+this.dropSelf(AUBlocks.YELLOW_FLUORESCENT_LIGHT.get());
+
+"block.abandonedunderground.black_fluorescent_light": "Black Fluorescent Light",
+"block.abandonedunderground.blue_fluorescent_light": "Blue Fluorescent Light",
+"block.abandonedunderground.brown_fluorescent_light": "Brown Fluorescent Light",
+"block.abandonedunderground.cyan_fluorescent_light": "Cyan Fluorescent Light",
+"block.abandonedunderground.gray_fluorescent_light": "Gray Fluorescent Light",
+"block.abandonedunderground.green_fluorescent_light": "Green Fluorescent Light",
+"block.abandonedunderground.light_blue_fluorescent_light": "Light Blue Fluorescent Light",
+"block.abandonedunderground.light_gray_fluorescent_light": "Light Gray Fluorescent Light",
+"block.abandonedunderground.lime_fluorescent_light": "Lime Fluorescent Light",
+"block.abandonedunderground.magenta_fluorescent_light": "Magenta Fluorescent Light",
+"block.abandonedunderground.orange_fluorescent_light": "Orange Fluorescent Light",
+"block.abandonedunderground.pink_fluorescent_light": "Pink Fluorescent Light",
+"block.abandonedunderground.purple_fluorescent_light": "Purple Fluorescent Light",
+"block.abandonedunderground.red_fluorescent_light": "Red Fluorescent Light",
+"block.abandonedunderground.white_fluorescent_light": "White Fluorescent Light",
+"block.abandonedunderground.yellow_fluorescent_light": "Yellow Fluorescent Light",

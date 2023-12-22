@@ -92,22 +92,22 @@ public class AUCreativeTabs {
 
                         output.accept(AUBlocks.SMOOTH_LIGHT.get());
 
-                        output.accept(AUBlocks.FLUORESCENT_LIGHT_BLACK.get());
-                        output.accept(AUBlocks.FLUORESCENT_LIGHT_BLUE.get());
-                        output.accept(AUBlocks.FLUORESCENT_LIGHT_BROWN.get());
-                        output.accept(AUBlocks.FLUORESCENT_LIGHT_CYAN.get());
-                        output.accept(AUBlocks.FLUORESCENT_LIGHT_GRAY.get());
-                        output.accept(AUBlocks.FLUORESCENT_LIGHT_GREEN.get());
-                        output.accept(AUBlocks.FLUORESCENT_LIGHT_LIGHT_BLUE.get());
-                        output.accept(AUBlocks.FLUORESCENT_LIGHT_LIGHT_GRAY.get());
-                        output.accept(AUBlocks.FLUORESCENT_LIGHT_LIME.get());
-                        output.accept(AUBlocks.FLUORESCENT_LIGHT_MAGENTA.get());
-                        output.accept(AUBlocks.FLUORESCENT_LIGHT_ORANGE.get());
-                        output.accept(AUBlocks.FLUORESCENT_LIGHT_PINK.get());
-                        output.accept(AUBlocks.FLUORESCENT_LIGHT_PURPLE.get());
-                        output.accept(AUBlocks.FLUORESCENT_LIGHT_RED.get());
-                        output.accept(AUBlocks.FLUORESCENT_LIGHT_WHITE.get());
-                        output.accept(AUBlocks.FLUORESCENT_LIGHT_YELLOW.get());
+                        output.accept(AUBlocks.BLACK_FLUORESCENT_LIGHT.get());
+                        output.accept(AUBlocks.BLUE_FLUORESCENT_LIGHT.get());
+                        output.accept(AUBlocks.BROWN_FLUORESCENT_LIGHT.get());
+                        output.accept(AUBlocks.CYAN_FLUORESCENT_LIGHT.get());
+                        output.accept(AUBlocks.GRAY_FLUORESCENT_LIGHT.get());
+                        output.accept(AUBlocks.GREEN_FLUORESCENT_LIGHT.get());
+                        output.accept(AUBlocks.LIGHT_BLUE_FLUORESCENT_LIGHT.get());
+                        output.accept(AUBlocks.LIGHT_GRAY_FLUORESCENT_LIGHT.get());
+                        output.accept(AUBlocks.LIME_FLUORESCENT_LIGHT.get());
+                        output.accept(AUBlocks.MAGENTA_FLUORESCENT_LIGHT.get());
+                        output.accept(AUBlocks.ORANGE_FLUORESCENT_LIGHT.get());
+                        output.accept(AUBlocks.PINK_FLUORESCENT_LIGHT.get());
+                        output.accept(AUBlocks.PURPLE_FLUORESCENT_LIGHT.get());
+                        output.accept(AUBlocks.RED_FLUORESCENT_LIGHT.get());
+                        output.accept(AUBlocks.WHITE_FLUORESCENT_LIGHT.get());
+                        output.accept(AUBlocks.YELLOW_FLUORESCENT_LIGHT.get());
 
                         ///////////////////////////////////////////////////////
 

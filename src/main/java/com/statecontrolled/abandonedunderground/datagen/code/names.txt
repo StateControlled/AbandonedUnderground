@@ -1,4 +1,16 @@
-White Tiles
-Small White Tiles
-Black Tiles
-Small Black Tiles
+Black Fluorescent Light
+Blue Fluorescent Light
+Brown Fluorescent Light
+Cyan Fluorescent Light
+Gray Fluorescent Light
+Green Fluorescent Light
+Light Blue Fluorescent Light
+Light Gray Fluorescent Light
+Lime Fluorescent Light
+Magenta Fluorescent Light
+Orange Fluorescent Light
+Pink Fluorescent Light
+Purple Fluorescent Light
+Red Fluorescent Light
+White Fluorescent Light
+Yellow Fluorescent Light

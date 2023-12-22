@@ -92,22 +92,22 @@ public class AUBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(AUBlocks.MOSSY_SIDEWALK_PANEL.get());
         this.dropSelf(AUBlocks.DIRTY_SIDEWALK_PANEL.get());
 
-        this.dropSelf(AUBlocks.FLUORESCENT_LIGHT_BLACK.get());
-        this.dropSelf(AUBlocks.FLUORESCENT_LIGHT_BLUE.get());
-        this.dropSelf(AUBlocks.FLUORESCENT_LIGHT_BROWN.get());
-        this.dropSelf(AUBlocks.FLUORESCENT_LIGHT_CYAN.get());
-        this.dropSelf(AUBlocks.FLUORESCENT_LIGHT_GRAY.get());
-        this.dropSelf(AUBlocks.FLUORESCENT_LIGHT_GREEN.get());
-        this.dropSelf(AUBlocks.FLUORESCENT_LIGHT_LIGHT_BLUE.get());
-        this.dropSelf(AUBlocks.FLUORESCENT_LIGHT_LIGHT_GRAY.get());
-        this.dropSelf(AUBlocks.FLUORESCENT_LIGHT_LIME.get());
-        this.dropSelf(AUBlocks.FLUORESCENT_LIGHT_MAGENTA.get());
-        this.dropSelf(AUBlocks.FLUORESCENT_LIGHT_ORANGE.get());
-        this.dropSelf(AUBlocks.FLUORESCENT_LIGHT_PINK.get());
-        this.dropSelf(AUBlocks.FLUORESCENT_LIGHT_PURPLE.get());
-        this.dropSelf(AUBlocks.FLUORESCENT_LIGHT_RED.get());
-        this.dropSelf(AUBlocks.FLUORESCENT_LIGHT_WHITE.get());
-        this.dropSelf(AUBlocks.FLUORESCENT_LIGHT_YELLOW.get());
+        this.dropSelf(AUBlocks.BLACK_FLUORESCENT_LIGHT.get());
+        this.dropSelf(AUBlocks.BLUE_FLUORESCENT_LIGHT.get());
+        this.dropSelf(AUBlocks.BROWN_FLUORESCENT_LIGHT.get());
+        this.dropSelf(AUBlocks.CYAN_FLUORESCENT_LIGHT.get());
+        this.dropSelf(AUBlocks.GRAY_FLUORESCENT_LIGHT.get());
+        this.dropSelf(AUBlocks.GREEN_FLUORESCENT_LIGHT.get());
+        this.dropSelf(AUBlocks.LIGHT_BLUE_FLUORESCENT_LIGHT.get());
+        this.dropSelf(AUBlocks.LIGHT_GRAY_FLUORESCENT_LIGHT.get());
+        this.dropSelf(AUBlocks.LIME_FLUORESCENT_LIGHT.get());
+        this.dropSelf(AUBlocks.MAGENTA_FLUORESCENT_LIGHT.get());
+        this.dropSelf(AUBlocks.ORANGE_FLUORESCENT_LIGHT.get());
+        this.dropSelf(AUBlocks.PINK_FLUORESCENT_LIGHT.get());
+        this.dropSelf(AUBlocks.PURPLE_FLUORESCENT_LIGHT.get());
+        this.dropSelf(AUBlocks.RED_FLUORESCENT_LIGHT.get());
+        this.dropSelf(AUBlocks.WHITE_FLUORESCENT_LIGHT.get());
+        this.dropSelf(AUBlocks.YELLOW_FLUORESCENT_LIGHT.get());
 
         /////////////////////////////////////////////////////////////
 

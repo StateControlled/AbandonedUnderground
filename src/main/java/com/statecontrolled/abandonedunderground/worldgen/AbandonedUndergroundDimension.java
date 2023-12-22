@@ -52,6 +52,7 @@ public class AbandonedUndergroundDimension {
     }
 
     public static void bootstrapType(BootstapContext<DimensionType> context) {
+        AbandonedUnderground.LOGGER.log(java.util.logging.Level.INFO, "Bootstrap Dimension Type");
         context.register(ABANDONEDUNDERGROUND_DIMENSION_TYPE, new DimensionType(
                         OptionalLong.of(6000),
                         true,   // hasSkylight
@@ -73,6 +74,7 @@ public class AbandonedUndergroundDimension {
     }
 
     public static void bootstrapStem(BootstapContext<LevelStem> context) {
+        AbandonedUnderground.LOGGER.log(java.util.logging.Level.INFO, "Bootstrap Dimension Level Stem");
         HolderGetter<Biome> biomeRegistry = context.lookup(Registries.BIOME);
         HolderGetter<DimensionType> dimensionTypes = context.lookup(Registries.DIMENSION_TYPE);
 

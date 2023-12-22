@@ -150,38 +150,39 @@ public class AUBlocks {
     public static final RegistryObject<Block> DIRTY_SIDEWALK_PANEL = registerBlock("dirty_sidewalk_panel",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
 
-    public static final RegistryObject<Block> FLUORESCENT_LIGHT_BLACK = registerBlock("fluorescent_light_black",
+    public static final RegistryObject<Block> BLACK_FLUORESCENT_LIGHT = registerBlock("black_fluorescent_light",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> FLUORESCENT_LIGHT_BLUE = registerBlock("fluorescent_light_blue",
+    public static final RegistryObject<Block> BLUE_FLUORESCENT_LIGHT = registerBlock("blue_fluorescent_light",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> FLUORESCENT_LIGHT_BROWN = registerBlock("fluorescent_light_brown",
+    public static final RegistryObject<Block> BROWN_FLUORESCENT_LIGHT = registerBlock("brown_fluorescent_light",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> FLUORESCENT_LIGHT_CYAN = registerBlock("fluorescent_light_cyan",
+    public static final RegistryObject<Block> CYAN_FLUORESCENT_LIGHT = registerBlock("cyan_fluorescent_light",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> FLUORESCENT_LIGHT_GRAY = registerBlock("fluorescent_light_gray",
+    public static final RegistryObject<Block> GRAY_FLUORESCENT_LIGHT = registerBlock("gray_fluorescent_light",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> FLUORESCENT_LIGHT_GREEN = registerBlock("fluorescent_light_green",
+    public static final RegistryObject<Block> GREEN_FLUORESCENT_LIGHT = registerBlock("green_fluorescent_light",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> FLUORESCENT_LIGHT_LIGHT_BLUE = registerBlock("fluorescent_light_light_blue",
+    public static final RegistryObject<Block> LIGHT_BLUE_FLUORESCENT_LIGHT = registerBlock("light_blue_fluorescent_light",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> FLUORESCENT_LIGHT_LIGHT_GRAY = registerBlock("fluorescent_light_light_gray",
+    public static final RegistryObject<Block> LIGHT_GRAY_FLUORESCENT_LIGHT = registerBlock("light_gray_fluorescent_light",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> FLUORESCENT_LIGHT_LIME = registerBlock("fluorescent_light_lime",
+    public static final RegistryObject<Block> LIME_FLUORESCENT_LIGHT = registerBlock("lime_fluorescent_light",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> FLUORESCENT_LIGHT_MAGENTA = registerBlock("fluorescent_light_magenta",
+    public static final RegistryObject<Block> MAGENTA_FLUORESCENT_LIGHT = registerBlock("magenta_fluorescent_light",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> FLUORESCENT_LIGHT_ORANGE = registerBlock("fluorescent_light_orange",
+    public static final RegistryObject<Block> ORANGE_FLUORESCENT_LIGHT = registerBlock("orange_fluorescent_light",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> FLUORESCENT_LIGHT_PINK = registerBlock("fluorescent_light_pink",
+    public static final RegistryObject<Block> PINK_FLUORESCENT_LIGHT = registerBlock("pink_fluorescent_light",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> FLUORESCENT_LIGHT_PURPLE = registerBlock("fluorescent_light_purple",
+    public static final RegistryObject<Block> PURPLE_FLUORESCENT_LIGHT = registerBlock("purple_fluorescent_light",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> FLUORESCENT_LIGHT_RED = registerBlock("fluorescent_light_red",
+    public static final RegistryObject<Block> RED_FLUORESCENT_LIGHT = registerBlock("red_fluorescent_light",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> FLUORESCENT_LIGHT_WHITE = registerBlock("fluorescent_light_white",
+    public static final RegistryObject<Block> WHITE_FLUORESCENT_LIGHT = registerBlock("white_fluorescent_light",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> FLUORESCENT_LIGHT_YELLOW = registerBlock("fluorescent_light_yellow",
+    public static final RegistryObject<Block> YELLOW_FLUORESCENT_LIGHT = registerBlock("yellow_fluorescent_light",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).requiresCorrectToolForDrops()));
+
 
 
     /*STAIRS*/
