@@ -45,6 +45,8 @@ public class AUBlockTagGenerator extends BlockTagsProvider{
 
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
             .add(
+                AUBlocks.BRIGHT_WHITE_BLOCK.get(),
+
                 AUBlocks.SMALL_WHITE_TILES.get(),
                 AUBlocks.CRACKED_SMALL_WHITE_TILES.get(),
                 AUBlocks.DIRTY_SMALL_WHITE_TILES.get(),

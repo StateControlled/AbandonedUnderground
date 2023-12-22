@@ -91,6 +91,7 @@ public class AUCreativeTabs {
                         output.accept(AUBlocks.DIRTY_SIDEWALK_PANEL.get());
 
                         output.accept(AUBlocks.SMOOTH_LIGHT.get());
+                        output.accept(AUBlocks.BRIGHT_WHITE_BLOCK.get());
 
                         output.accept(AUBlocks.BLACK_FLUORESCENT_LIGHT.get());
                         output.accept(AUBlocks.BLUE_FLUORESCENT_LIGHT.get());

@@ -21,6 +21,8 @@ public class AUBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
+        auSimpleCubicBlock(AUBlocks.BRIGHT_WHITE_BLOCK);
+        
         auSimpleCubicBlock(AUBlocks.SMALL_WHITE_TILES);
         auSimpleCubicBlock(AUBlocks.CRACKED_SMALL_WHITE_TILES);
         auSimpleCubicBlock(AUBlocks.DIRTY_SMALL_WHITE_TILES);

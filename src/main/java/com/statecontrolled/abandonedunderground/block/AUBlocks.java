@@ -25,8 +25,11 @@ public class AUBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, AbandonedUnderground.MOD_ID);
 
     /*BLOCKS*/
+    public static final RegistryObject<Block> BRIGHT_WHITE_BLOCK = registerBlock("bright_white_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).noLootTable()));
+
     public static final RegistryObject<Block> SMALL_WHITE_TILES = registerBlock("small_white_tiles",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> CRACKED_SMALL_WHITE_TILES = registerBlock("cracked_small_white_tiles",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> DIRTY_SMALL_WHITE_TILES = registerBlock("dirty_small_white_tiles",
@@ -188,108 +191,108 @@ public class AUBlocks {
     /*STAIRS*/
     public static final RegistryObject<Block> WHITE_TILE_STAIRS = registerBlock("white_tile_stairs",
             () -> new StairBlock(() -> AUBlocks.WHITE_TILES.get().defaultBlockState(),
-                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS)));
+                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> MOSSY_WHITE_TILE_STAIRS = registerBlock("mossy_white_tile_stairs",
             () -> new StairBlock(() -> AUBlocks.WHITE_TILES.get().defaultBlockState(),
-                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS)));
+                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> DIRTY_WHITE_TILE_STAIRS = registerBlock("dirty_white_tile_stairs",
             () -> new StairBlock(() -> AUBlocks.WHITE_TILES.get().defaultBlockState(),
-                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS)));
+                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> BLACK_TILE_STAIRS = registerBlock("black_tile_stairs",
             () -> new StairBlock(() -> AUBlocks.BLACK_TILES.get().defaultBlockState(),
-                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS)));
+                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> MOSSY_BLACK_TILE_STAIRS = registerBlock("mossy_black_tile_stairs",
             () -> new StairBlock(() -> AUBlocks.BLACK_TILES.get().defaultBlockState(),
-                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS)));
+                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> DIRTY_BLACK_TILE_STAIRS = registerBlock("dirty_black_tile_stairs",
             () -> new StairBlock(() -> AUBlocks.BLACK_TILES.get().defaultBlockState(),
-                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS)));
+                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> SMALL_WHITE_TILE_STAIRS = registerBlock("small_white_tile_stairs",
             () -> new StairBlock(() -> AUBlocks.WHITE_TILES.get().defaultBlockState(),
-                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS)));
+                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> MOSSY_SMALL_WHITE_TILE_STAIRS = registerBlock("mossy_small_white_tile_stairs",
             () -> new StairBlock(() -> AUBlocks.WHITE_TILES.get().defaultBlockState(),
-                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS)));
+                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> DIRTY_SMALL_WHITE_TILE_STAIRS = registerBlock("dirty_small_white_tile_stairs",
             () -> new StairBlock(() -> AUBlocks.WHITE_TILES.get().defaultBlockState(),
-                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS)));
+                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> SMALL_BLACK_TILE_STAIRS = registerBlock("small_black_tile_stairs",
             () -> new StairBlock(() -> AUBlocks.BLACK_TILES.get().defaultBlockState(),
-                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS)));
+                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> MOSSY_SMALL_BLACK_TILE_STAIRS = registerBlock("mossy_small_black_tile_stairs",
             () -> new StairBlock(() -> AUBlocks.BLACK_TILES.get().defaultBlockState(),
-                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS)));
+                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> DIRTY_SMALL_BLACK_TILE_STAIRS = registerBlock("dirty_small_black_tile_stairs",
             () -> new StairBlock(() -> AUBlocks.BLACK_TILES.get().defaultBlockState(),
-                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS)));
+                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> CONCRETE_PLATFORM_STAIRS = registerBlock("concrete_platform_stairs",
             () -> new StairBlock(() -> AUBlocks.CONCRETE_PLATFORM.get().defaultBlockState(),
-                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS)));
+                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> MOSSY_CONCRETE_PLATFORM_STAIRS = registerBlock("mossy_concrete_platform_stairs",
             () -> new StairBlock(() -> AUBlocks.CONCRETE_PLATFORM.get().defaultBlockState(),
-                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS)));
+                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> DIRTY_CONCRETE_PLATFORM_STAIRS = registerBlock("dirty_concrete_platform_stairs",
             () -> new StairBlock(() -> AUBlocks.CONCRETE_PLATFORM.get().defaultBlockState(),
-                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS)));
+                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> STEEL_PLATE_STAIRS = registerBlock("steel_plate_stairs",
             () -> new StairBlock(() -> AUBlocks.STEEL_PLATE_FLOOR.get().defaultBlockState(),
-                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS)));
+                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> SMOOTH_METAL_STAIRS = registerBlock("smooth_metal_stairs",
             () -> new StairBlock(() -> AUBlocks.SMOOTH_METAL_FLOOR.get().defaultBlockState(),
-                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS)));
+                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS).requiresCorrectToolForDrops()));
 
     /*SLABS*/
     public static final RegistryObject<Block> WHITE_TILE_SLAB = registerBlock("white_tile_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB)));
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> DIRTY_WHITE_TILE_SLAB = registerBlock("dirty_white_tile_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB)));
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> MOSSY_WHITE_TILE_SLAB = registerBlock("mossy_white_tile_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB)));
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> BLACK_TILE_SLAB = registerBlock("black_tile_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB)));
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> DIRTY_BLACK_TILE_SLAB = registerBlock("dirty_black_tile_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB)));
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> MOSSY_BLACK_TILE_SLAB = registerBlock("mossy_black_tile_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB)));
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> SMALL_WHITE_TILE_SLAB = registerBlock("small_white_tile_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB)));
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> DIRTY_SMALL_WHITE_TILE_SLAB = registerBlock("dirty_small_white_tile_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB)));
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> MOSSY_SMALL_WHITE_TILE_SLAB = registerBlock("mossy_small_white_tile_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB)));
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> SMALL_BLACK_TILE_SLAB = registerBlock("small_black_tile_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB)));
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> DIRTY_SMALL_BLACK_TILE_SLAB = registerBlock("dirty_small_black_tile_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB)));
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> MOSSY_SMALL_BLACK_TILE_SLAB = registerBlock("mossy_small_black_tile_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB)));
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> CONCRETE_PLATFORM_SLAB = registerBlock("concrete_platform_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB)));
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> DIRTY_CONCRETE_PLATFORM_SLAB = registerBlock("dirty_concrete_platform_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB)));
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> MOSSY_CONCRETE_PLATFORM_SLAB = registerBlock("mossy_concrete_platform_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB)));
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> CONCRETE_ROAD_DOUBLE_LINE_SLAB = registerBlock("concrete_road_double_line_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB)));
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> CONCRETE_ROAD_DASHED_LINE_SLAB = registerBlock("concrete_road_dashed_line_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB)));
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> CONCRETE_ROAD_SOLID_LINE_SLAB = registerBlock("concrete_road_solid_line_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB)));
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> STEEL_PLATE_SLAB = registerBlock("steel_plate_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB)));
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> SMOOTH_METAL_SLAB = registerBlock("smooth_metal_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB)));
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB).requiresCorrectToolForDrops()));
 
     private AUBlocks() {
         ;
