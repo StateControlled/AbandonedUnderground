@@ -45,6 +45,9 @@ public class AbandonedUnderground {
         }
     }
 
+    /**
+     * Main. Initialize all registry objects.
+     **/
     public AbandonedUnderground() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
