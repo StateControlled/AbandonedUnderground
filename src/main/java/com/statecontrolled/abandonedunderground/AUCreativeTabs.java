@@ -57,11 +57,57 @@ public class AUCreativeTabs {
                         output.accept(AUBlocks.CONCRETE_ROAD_SOLID_LINE.get());
                         output.accept(AUBlocks.CONCRETE_ROAD_DASHED_LINE.get());
 
+                        output.accept(AUBlocks.METAL_GRATE_FLOOR.get());
+                        output.accept(AUBlocks.RUSTED_METAL_GRATE_FLOOR.get());
+
+                        output.accept(AUBlocks.STEEL_PLATE_FLOOR.get());
+                        output.accept(AUBlocks.RUSTED_STEEL_PLATE_FLOOR.get());
+                        output.accept(AUBlocks.MOSSY_STEEL_PLATE_FLOOR.get());
+
+                        output.accept(AUBlocks.SMOOTH_METAL_FLOOR.get());
+                        output.accept(AUBlocks.RUSTED_SMOOTH_METAL_FLOOR.get());
+                        output.accept(AUBlocks.MOSSY_SMOOTH_METAL_FLOOR.get());
+
+                        output.accept(AUBlocks.CORRUGATED_METAL.get());
+                        output.accept(AUBlocks.RUSTED_CORRUGATED_METAL.get());
+                        output.accept(AUBlocks.MOSSY_CORRUGATED_METAL.get());
+
+                        output.accept(AUBlocks.BLACK_ASPHALT.get());
+                        output.accept(AUBlocks.BLACK_ASPHALT_YELLOW_LINE.get());
+                        output.accept(AUBlocks.BLACK_ASPHALT_WHITE_LINE.get());
+                        output.accept(AUBlocks.CRACKED_BLACK_ASPHALT.get());
+                        output.accept(AUBlocks.GRAY_ASPHALT.get());
+                        output.accept(AUBlocks.GRAY_ASPHALT_YELLOW_LINE.get());
+                        output.accept(AUBlocks.GRAY_ASPHALT_WHITE_LINE.get());
+                        output.accept(AUBlocks.CRACKED_GRAY_ASPHALT.get());
+
+                        output.accept(AUBlocks.SIDEWALK.get());
+                        output.accept(AUBlocks.CRACKED_SIDEWALK.get());
+                        output.accept(AUBlocks.MOSSY_SIDEWALK.get());
+                        output.accept(AUBlocks.DIRTY_SIDEWALK.get());
+                        output.accept(AUBlocks.SIDEWALK_PANEL.get());
+                        output.accept(AUBlocks.CRACKED_SIDEWALK_PANEL.get());
+                        output.accept(AUBlocks.MOSSY_SIDEWALK_PANEL.get());
+                        output.accept(AUBlocks.DIRTY_SIDEWALK_PANEL.get());
+
                         output.accept(AUBlocks.SMOOTH_LIGHT.get());
 
-                        output.accept(AUBlocks.METAL_GRATE_FLOOR.get());
-                        output.accept(AUBlocks.STEEL_PLATE_FLOOR.get());
-                        output.accept(AUBlocks.SMOOTH_METAL_FLOOR.get());
+                        output.accept(AUBlocks.FLUORESCENT_LIGHT_BLACK.get());
+                        output.accept(AUBlocks.FLUORESCENT_LIGHT_BLUE.get());
+                        output.accept(AUBlocks.FLUORESCENT_LIGHT_BROWN.get());
+                        output.accept(AUBlocks.FLUORESCENT_LIGHT_CYAN.get());
+                        output.accept(AUBlocks.FLUORESCENT_LIGHT_GRAY.get());
+                        output.accept(AUBlocks.FLUORESCENT_LIGHT_GREEN.get());
+                        output.accept(AUBlocks.FLUORESCENT_LIGHT_LIGHT_BLUE.get());
+                        output.accept(AUBlocks.FLUORESCENT_LIGHT_LIGHT_GRAY.get());
+                        output.accept(AUBlocks.FLUORESCENT_LIGHT_LIME.get());
+                        output.accept(AUBlocks.FLUORESCENT_LIGHT_MAGENTA.get());
+                        output.accept(AUBlocks.FLUORESCENT_LIGHT_ORANGE.get());
+                        output.accept(AUBlocks.FLUORESCENT_LIGHT_PINK.get());
+                        output.accept(AUBlocks.FLUORESCENT_LIGHT_PURPLE.get());
+                        output.accept(AUBlocks.FLUORESCENT_LIGHT_RED.get());
+                        output.accept(AUBlocks.FLUORESCENT_LIGHT_WHITE.get());
+                        output.accept(AUBlocks.FLUORESCENT_LIGHT_YELLOW.get());
 
                         ///////////////////////////////////////////////////////
 

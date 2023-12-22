@@ -1,9 +1,7 @@
 package com.statecontrolled.abandonedunderground.datagen.loot;
 
 import java.util.Set;
-import java.util.logging.Level;
 
-import com.statecontrolled.abandonedunderground.AbandonedUnderground;
 import com.statecontrolled.abandonedunderground.block.AUBlocks;
 
 import net.minecraft.data.loot.BlockLootSubProvider;
@@ -65,6 +63,51 @@ public class AUBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(AUBlocks.SMOOTH_METAL_FLOOR.get());
 
         this.dropSelf(AUBlocks.SMOOTH_LIGHT.get());
+
+        this.dropSelf(AUBlocks.CORRUGATED_METAL.get());
+        this.dropSelf(AUBlocks.RUSTED_CORRUGATED_METAL.get());
+        this.dropSelf(AUBlocks.MOSSY_CORRUGATED_METAL.get());
+
+        this.dropSelf(AUBlocks.BLACK_ASPHALT.get());
+        this.dropSelf(AUBlocks.BLACK_ASPHALT_YELLOW_LINE.get());
+        this.dropSelf(AUBlocks.BLACK_ASPHALT_WHITE_LINE.get());
+        this.dropSelf(AUBlocks.CRACKED_BLACK_ASPHALT.get());
+        this.dropSelf(AUBlocks.GRAY_ASPHALT.get());
+        this.dropSelf(AUBlocks.GRAY_ASPHALT_YELLOW_LINE.get());
+        this.dropSelf(AUBlocks.GRAY_ASPHALT_WHITE_LINE.get());
+        this.dropSelf(AUBlocks.CRACKED_GRAY_ASPHALT.get());
+
+        this.dropSelf(AUBlocks.RUSTED_METAL_GRATE_FLOOR.get());
+        this.dropSelf(AUBlocks.RUSTED_STEEL_PLATE_FLOOR.get());
+        this.dropSelf(AUBlocks.MOSSY_STEEL_PLATE_FLOOR.get());
+        this.dropSelf(AUBlocks.RUSTED_SMOOTH_METAL_FLOOR.get());
+        this.dropSelf(AUBlocks.MOSSY_SMOOTH_METAL_FLOOR.get());
+
+        this.dropSelf(AUBlocks.SIDEWALK.get());
+        this.dropSelf(AUBlocks.CRACKED_SIDEWALK.get());
+        this.dropSelf(AUBlocks.MOSSY_SIDEWALK.get());
+        this.dropSelf(AUBlocks.DIRTY_SIDEWALK.get());
+        this.dropSelf(AUBlocks.SIDEWALK_PANEL.get());
+        this.dropSelf(AUBlocks.CRACKED_SIDEWALK_PANEL.get());
+        this.dropSelf(AUBlocks.MOSSY_SIDEWALK_PANEL.get());
+        this.dropSelf(AUBlocks.DIRTY_SIDEWALK_PANEL.get());
+
+        this.dropSelf(AUBlocks.FLUORESCENT_LIGHT_BLACK.get());
+        this.dropSelf(AUBlocks.FLUORESCENT_LIGHT_BLUE.get());
+        this.dropSelf(AUBlocks.FLUORESCENT_LIGHT_BROWN.get());
+        this.dropSelf(AUBlocks.FLUORESCENT_LIGHT_CYAN.get());
+        this.dropSelf(AUBlocks.FLUORESCENT_LIGHT_GRAY.get());
+        this.dropSelf(AUBlocks.FLUORESCENT_LIGHT_GREEN.get());
+        this.dropSelf(AUBlocks.FLUORESCENT_LIGHT_LIGHT_BLUE.get());
+        this.dropSelf(AUBlocks.FLUORESCENT_LIGHT_LIGHT_GRAY.get());
+        this.dropSelf(AUBlocks.FLUORESCENT_LIGHT_LIME.get());
+        this.dropSelf(AUBlocks.FLUORESCENT_LIGHT_MAGENTA.get());
+        this.dropSelf(AUBlocks.FLUORESCENT_LIGHT_ORANGE.get());
+        this.dropSelf(AUBlocks.FLUORESCENT_LIGHT_PINK.get());
+        this.dropSelf(AUBlocks.FLUORESCENT_LIGHT_PURPLE.get());
+        this.dropSelf(AUBlocks.FLUORESCENT_LIGHT_RED.get());
+        this.dropSelf(AUBlocks.FLUORESCENT_LIGHT_WHITE.get());
+        this.dropSelf(AUBlocks.FLUORESCENT_LIGHT_YELLOW.get());
 
         /////////////////////////////////////////////////////////////
 

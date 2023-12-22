@@ -1,7 +1,6 @@
 package com.statecontrolled.abandonedunderground.block;
 
 import java.util.function.Supplier;
-import java.util.logging.Level;
 
 import com.statecontrolled.abandonedunderground.AbandonedUnderground;
 import com.statecontrolled.abandonedunderground.item.AUItems;
@@ -10,7 +9,6 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -96,6 +94,95 @@ public class AUBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> SMOOTH_METAL_FLOOR = registerBlock("smooth_metal_floor",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
+
+
+
+    public static final RegistryObject<Block> CORRUGATED_METAL = registerBlock("corrugated_metal",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> RUSTED_CORRUGATED_METAL = registerBlock("rusted_corrugated_metal",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> MOSSY_CORRUGATED_METAL = registerBlock("mossy_corrugated_metal",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> BLACK_ASPHALT = registerBlock("black_asphalt",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> BLACK_ASPHALT_YELLOW_LINE = registerBlock("black_asphalt_yellow_line",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> BLACK_ASPHALT_WHITE_LINE = registerBlock("black_asphalt_white_line",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> CRACKED_BLACK_ASPHALT = registerBlock("cracked_black_asphalt",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> GRAY_ASPHALT = registerBlock("gray_asphalt",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> GRAY_ASPHALT_YELLOW_LINE = registerBlock("gray_asphalt_yellow_line",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> GRAY_ASPHALT_WHITE_LINE = registerBlock("gray_asphalt_white_line",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> CRACKED_GRAY_ASPHALT = registerBlock("cracked_gray_asphalt",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> RUSTED_METAL_GRATE_FLOOR = registerBlock("rusted_metal_grate_floor",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> RUSTED_STEEL_PLATE_FLOOR = registerBlock("rusted_steel_plate_floor",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> MOSSY_STEEL_PLATE_FLOOR = registerBlock("mossy_steel_plate_floor",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> RUSTED_SMOOTH_METAL_FLOOR = registerBlock("rusted_smooth_metal_floor",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> MOSSY_SMOOTH_METAL_FLOOR = registerBlock("mossy_smooth_metal_floor",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> SIDEWALK = registerBlock("sidewalk",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> CRACKED_SIDEWALK = registerBlock("cracked_sidewalk",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> MOSSY_SIDEWALK = registerBlock("mossy_sidewalk",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> DIRTY_SIDEWALK = registerBlock("dirty_sidewalk",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> SIDEWALK_PANEL = registerBlock("sidewalk_panel",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> CRACKED_SIDEWALK_PANEL = registerBlock("cracked_sidewalk_panel",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> MOSSY_SIDEWALK_PANEL = registerBlock("mossy_sidewalk_panel",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> DIRTY_SIDEWALK_PANEL = registerBlock("dirty_sidewalk_panel",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> FLUORESCENT_LIGHT_BLACK = registerBlock("fluorescent_light_black",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> FLUORESCENT_LIGHT_BLUE = registerBlock("fluorescent_light_blue",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> FLUORESCENT_LIGHT_BROWN = registerBlock("fluorescent_light_brown",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> FLUORESCENT_LIGHT_CYAN = registerBlock("fluorescent_light_cyan",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> FLUORESCENT_LIGHT_GRAY = registerBlock("fluorescent_light_gray",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> FLUORESCENT_LIGHT_GREEN = registerBlock("fluorescent_light_green",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> FLUORESCENT_LIGHT_LIGHT_BLUE = registerBlock("fluorescent_light_light_blue",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> FLUORESCENT_LIGHT_LIGHT_GRAY = registerBlock("fluorescent_light_light_gray",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> FLUORESCENT_LIGHT_LIME = registerBlock("fluorescent_light_lime",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> FLUORESCENT_LIGHT_MAGENTA = registerBlock("fluorescent_light_magenta",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> FLUORESCENT_LIGHT_ORANGE = registerBlock("fluorescent_light_orange",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> FLUORESCENT_LIGHT_PINK = registerBlock("fluorescent_light_pink",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> FLUORESCENT_LIGHT_PURPLE = registerBlock("fluorescent_light_purple",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> FLUORESCENT_LIGHT_RED = registerBlock("fluorescent_light_red",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> FLUORESCENT_LIGHT_WHITE = registerBlock("fluorescent_light_white",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> FLUORESCENT_LIGHT_YELLOW = registerBlock("fluorescent_light_yellow",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).requiresCorrectToolForDrops()));
+
 
     /*STAIRS*/
     public static final RegistryObject<Block> WHITE_TILE_STAIRS = registerBlock("white_tile_stairs",

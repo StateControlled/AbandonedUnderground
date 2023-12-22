@@ -75,6 +75,52 @@ public class AUBlockStateProvider extends BlockStateProvider {
         auSimpleCubicBlock(AUBlocks.STEEL_PLATE_FLOOR);
         auSimpleCubicBlock(AUBlocks.SMOOTH_METAL_FLOOR);
 
+        auSimpleCubicBlock(AUBlocks.CORRUGATED_METAL);
+        auSimpleCubicBlock(AUBlocks.RUSTED_CORRUGATED_METAL);
+        auSimpleCubicBlock(AUBlocks.MOSSY_CORRUGATED_METAL);
+
+        auSimpleCubicBlock(AUBlocks.BLACK_ASPHALT);
+        auSimpleCubicBlock(AUBlocks.BLACK_ASPHALT_YELLOW_LINE);
+        auSimpleCubicBlock(AUBlocks.BLACK_ASPHALT_WHITE_LINE);
+        auSimpleCubicBlock(AUBlocks.CRACKED_BLACK_ASPHALT);
+
+        auSimpleCubicBlock(AUBlocks.GRAY_ASPHALT);
+        auSimpleCubicBlock(AUBlocks.GRAY_ASPHALT_YELLOW_LINE);
+        auSimpleCubicBlock(AUBlocks.GRAY_ASPHALT_WHITE_LINE);
+        auSimpleCubicBlock(AUBlocks.CRACKED_GRAY_ASPHALT);
+
+        auSimpleCubicBlock(AUBlocks.RUSTED_METAL_GRATE_FLOOR);
+        auSimpleCubicBlock(AUBlocks.RUSTED_STEEL_PLATE_FLOOR);
+        auSimpleCubicBlock(AUBlocks.MOSSY_STEEL_PLATE_FLOOR);
+        auSimpleCubicBlock(AUBlocks.RUSTED_SMOOTH_METAL_FLOOR);
+        auSimpleCubicBlock(AUBlocks.MOSSY_SMOOTH_METAL_FLOOR);
+
+        auSimpleCubicBlock(AUBlocks.SIDEWALK);
+        auSimpleCubicBlock(AUBlocks.CRACKED_SIDEWALK);
+        auSimpleCubicBlock(AUBlocks.MOSSY_SIDEWALK);
+        auSimpleCubicBlock(AUBlocks.DIRTY_SIDEWALK);
+        auSimpleCubicBlock(AUBlocks.SIDEWALK_PANEL);
+        auSimpleCubicBlock(AUBlocks.CRACKED_SIDEWALK_PANEL);
+        auSimpleCubicBlock(AUBlocks.MOSSY_SIDEWALK_PANEL);
+        auSimpleCubicBlock(AUBlocks.DIRTY_SIDEWALK_PANEL);
+
+        auSimpleCubicBlock(AUBlocks.FLUORESCENT_LIGHT_BLACK);
+        auSimpleCubicBlock(AUBlocks.FLUORESCENT_LIGHT_BLUE);
+        auSimpleCubicBlock(AUBlocks.FLUORESCENT_LIGHT_BROWN);
+        auSimpleCubicBlock(AUBlocks.FLUORESCENT_LIGHT_CYAN);
+        auSimpleCubicBlock(AUBlocks.FLUORESCENT_LIGHT_GRAY);
+        auSimpleCubicBlock(AUBlocks.FLUORESCENT_LIGHT_GREEN);
+        auSimpleCubicBlock(AUBlocks.FLUORESCENT_LIGHT_LIGHT_BLUE);
+        auSimpleCubicBlock(AUBlocks.FLUORESCENT_LIGHT_LIGHT_GRAY);
+        auSimpleCubicBlock(AUBlocks.FLUORESCENT_LIGHT_LIME);
+        auSimpleCubicBlock(AUBlocks.FLUORESCENT_LIGHT_MAGENTA);
+        auSimpleCubicBlock(AUBlocks.FLUORESCENT_LIGHT_ORANGE);
+        auSimpleCubicBlock(AUBlocks.FLUORESCENT_LIGHT_PINK);
+        auSimpleCubicBlock(AUBlocks.FLUORESCENT_LIGHT_PURPLE);
+        auSimpleCubicBlock(AUBlocks.FLUORESCENT_LIGHT_RED);
+        auSimpleCubicBlock(AUBlocks.FLUORESCENT_LIGHT_WHITE);
+        auSimpleCubicBlock(AUBlocks.FLUORESCENT_LIGHT_YELLOW);
+
         stairsBlock((StairBlock) AUBlocks.WHITE_TILE_STAIRS.get(),
                 blockTexture(AUBlocks.WHITE_TILES.get()));
         stairsBlock((StairBlock) AUBlocks.MOSSY_WHITE_TILE_STAIRS.get(),

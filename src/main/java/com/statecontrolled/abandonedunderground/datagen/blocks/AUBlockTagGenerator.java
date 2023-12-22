@@ -82,7 +82,52 @@ public class AUBlockTagGenerator extends BlockTagsProvider{
 
                 AUBlocks.METAL_GRATE_FLOOR.get(),
                 AUBlocks.STEEL_PLATE_FLOOR.get(),
-                AUBlocks.SMOOTH_METAL_FLOOR.get()
+                AUBlocks.SMOOTH_METAL_FLOOR.get(),
+
+                AUBlocks.CORRUGATED_METAL.get(),
+                AUBlocks.RUSTED_CORRUGATED_METAL.get(),
+                AUBlocks.MOSSY_CORRUGATED_METAL.get(),
+
+                AUBlocks.BLACK_ASPHALT.get(),
+                AUBlocks.BLACK_ASPHALT_YELLOW_LINE.get(),
+                AUBlocks.BLACK_ASPHALT_WHITE_LINE.get(),
+                AUBlocks.CRACKED_BLACK_ASPHALT.get(),
+                AUBlocks.GRAY_ASPHALT.get(),
+                AUBlocks.GRAY_ASPHALT_YELLOW_LINE.get(),
+                AUBlocks.GRAY_ASPHALT_WHITE_LINE.get(),
+                AUBlocks.CRACKED_GRAY_ASPHALT.get(),
+
+                AUBlocks.RUSTED_METAL_GRATE_FLOOR.get(),
+                AUBlocks.RUSTED_STEEL_PLATE_FLOOR.get(),
+                AUBlocks.MOSSY_STEEL_PLATE_FLOOR.get(),
+                AUBlocks.RUSTED_SMOOTH_METAL_FLOOR.get(),
+                AUBlocks.MOSSY_SMOOTH_METAL_FLOOR.get(),
+
+                AUBlocks.SIDEWALK.get(),
+                AUBlocks.CRACKED_SIDEWALK.get(),
+                AUBlocks.MOSSY_SIDEWALK.get(),
+                AUBlocks.DIRTY_SIDEWALK.get(),
+                AUBlocks.SIDEWALK_PANEL.get(),
+                AUBlocks.CRACKED_SIDEWALK_PANEL.get(),
+                AUBlocks.MOSSY_SIDEWALK_PANEL.get(),
+                AUBlocks.DIRTY_SIDEWALK_PANEL.get(),
+
+                AUBlocks.FLUORESCENT_LIGHT_BLACK.get(),
+                AUBlocks.FLUORESCENT_LIGHT_BLUE.get(),
+                AUBlocks.FLUORESCENT_LIGHT_BROWN.get(),
+                AUBlocks.FLUORESCENT_LIGHT_CYAN.get(),
+                AUBlocks.FLUORESCENT_LIGHT_GRAY.get(),
+                AUBlocks.FLUORESCENT_LIGHT_GREEN.get(),
+                AUBlocks.FLUORESCENT_LIGHT_LIGHT_BLUE.get(),
+                AUBlocks.FLUORESCENT_LIGHT_LIGHT_GRAY.get(),
+                AUBlocks.FLUORESCENT_LIGHT_LIME.get(),
+                AUBlocks.FLUORESCENT_LIGHT_MAGENTA.get(),
+                AUBlocks.FLUORESCENT_LIGHT_ORANGE.get(),
+                AUBlocks.FLUORESCENT_LIGHT_PINK.get(),
+                AUBlocks.FLUORESCENT_LIGHT_PURPLE.get(),
+                AUBlocks.FLUORESCENT_LIGHT_RED.get(),
+                AUBlocks.FLUORESCENT_LIGHT_WHITE.get(),
+                AUBlocks.FLUORESCENT_LIGHT_YELLOW.get()
             );
 
         this.tag(BlockTags.NEEDS_STONE_TOOL)
@@ -111,7 +156,23 @@ public class AUBlockTagGenerator extends BlockTagsProvider{
                 AUBlocks.MOSSY_BLACK_TILES.get(),
                 AUBlocks.CHISELED_BLACK_TILES.get(),
 
-                AUBlocks.SMOOTH_LIGHT.get()
+                AUBlocks.SMOOTH_LIGHT.get(),
+                AUBlocks.FLUORESCENT_LIGHT_BLACK.get(),
+                AUBlocks.FLUORESCENT_LIGHT_BLUE.get(),
+                AUBlocks.FLUORESCENT_LIGHT_BROWN.get(),
+                AUBlocks.FLUORESCENT_LIGHT_CYAN.get(),
+                AUBlocks.FLUORESCENT_LIGHT_GRAY.get(),
+                AUBlocks.FLUORESCENT_LIGHT_GREEN.get(),
+                AUBlocks.FLUORESCENT_LIGHT_LIGHT_BLUE.get(),
+                AUBlocks.FLUORESCENT_LIGHT_LIGHT_GRAY.get(),
+                AUBlocks.FLUORESCENT_LIGHT_LIME.get(),
+                AUBlocks.FLUORESCENT_LIGHT_MAGENTA.get(),
+                AUBlocks.FLUORESCENT_LIGHT_ORANGE.get(),
+                AUBlocks.FLUORESCENT_LIGHT_PINK.get(),
+                AUBlocks.FLUORESCENT_LIGHT_PURPLE.get(),
+                AUBlocks.FLUORESCENT_LIGHT_RED.get(),
+                AUBlocks.FLUORESCENT_LIGHT_WHITE.get(),
+                AUBlocks.FLUORESCENT_LIGHT_YELLOW.get()
             );
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
@@ -127,7 +188,34 @@ public class AUBlockTagGenerator extends BlockTagsProvider{
 
                 AUBlocks.METAL_GRATE_FLOOR.get(),
                 AUBlocks.STEEL_PLATE_FLOOR.get(),
-                AUBlocks.SMOOTH_METAL_FLOOR.get()
+                AUBlocks.SMOOTH_METAL_FLOOR.get(),
+                AUBlocks.CORRUGATED_METAL.get(),
+                AUBlocks.RUSTED_CORRUGATED_METAL.get(),
+                AUBlocks.MOSSY_CORRUGATED_METAL.get(),
+
+                AUBlocks.BLACK_ASPHALT.get(),
+                AUBlocks.BLACK_ASPHALT_YELLOW_LINE.get(),
+                AUBlocks.BLACK_ASPHALT_WHITE_LINE.get(),
+                AUBlocks.CRACKED_BLACK_ASPHALT.get(),
+                AUBlocks.GRAY_ASPHALT.get(),
+                AUBlocks.GRAY_ASPHALT_YELLOW_LINE.get(),
+                AUBlocks.GRAY_ASPHALT_WHITE_LINE.get(),
+                AUBlocks.CRACKED_GRAY_ASPHALT.get(),
+
+                AUBlocks.RUSTED_METAL_GRATE_FLOOR.get(),
+                AUBlocks.RUSTED_STEEL_PLATE_FLOOR.get(),
+                AUBlocks.MOSSY_STEEL_PLATE_FLOOR.get(),
+                AUBlocks.RUSTED_SMOOTH_METAL_FLOOR.get(),
+                AUBlocks.MOSSY_SMOOTH_METAL_FLOOR.get(),
+
+                AUBlocks.SIDEWALK.get(),
+                AUBlocks.CRACKED_SIDEWALK.get(),
+                AUBlocks.MOSSY_SIDEWALK.get(),
+                AUBlocks.DIRTY_SIDEWALK.get(),
+                AUBlocks.SIDEWALK_PANEL.get(),
+                AUBlocks.CRACKED_SIDEWALK_PANEL.get(),
+                AUBlocks.MOSSY_SIDEWALK_PANEL.get(),
+                AUBlocks.DIRTY_SIDEWALK_PANEL.get()
             );
 
         //this.tag(BlockTags.NEEDS_DIAMOND_TOOL);
