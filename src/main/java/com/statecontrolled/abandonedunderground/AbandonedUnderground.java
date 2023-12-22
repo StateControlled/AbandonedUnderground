@@ -24,7 +24,6 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 /**
  * AbandonedUnderground is a mod for Minecraft that adds a new dimension of the same name.
  * @author StateControlled
- * @version 0.1.0
  **/
 @Mod(AbandonedUnderground.MOD_ID)
 public class AbandonedUnderground {

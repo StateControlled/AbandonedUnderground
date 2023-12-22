@@ -32,32 +32,37 @@ public class AUDataGenerator {
 
     @SubscribeEvent
     public static void gatherData(GatherDataEvent event) {
-        DataGenerator generator = event.getGenerator();
-        PackOutput packOutput = generator.getPackOutput();
-        ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
-        CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
+        try {
+            DataGenerator generator = event.getGenerator();
+            PackOutput packOutput = generator.getPackOutput();
+            ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
+            CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
-        generator.addProvider(event.includeServer(), new AURecipeProvider(packOutput));
-        generator.addProvider(event.includeServer(), AULootTableProvider.create(packOutput));
+            generator.addProvider(event.includeServer(), new AURecipeProvider(packOutput));
+            generator.addProvider(event.includeServer(), AULootTableProvider.create(packOutput));
 
-        generator.addProvider(event.includeClient(), new AUBlockStateProvider(packOutput, existingFileHelper));
-        generator.addProvider(event.includeClient(), new AUItemModelProvider(packOutput, existingFileHelper));
+            generator.addProvider(event.includeClient(), new AUBlockStateProvider(packOutput, existingFileHelper));
+            generator.addProvider(event.includeClient(), new AUItemModelProvider(packOutput, existingFileHelper));
 
-        generator.addProvider(event.includeServer(), new AUWorldGenerationProvider(packOutput, lookupProvider));
-        generator.addProvider(event.includeClient(), new AUPaintingVariantTagProvider(packOutput, lookupProvider, existingFileHelper));
+            generator.addProvider(event.includeServer(), new AUWorldGenerationProvider(packOutput, lookupProvider));
+            generator.addProvider(event.includeClient(), new AUPaintingVariantTagProvider(packOutput, lookupProvider, existingFileHelper));
 
-        generator.addProvider(event.includeClient(),
+            generator.addProvider(event.includeClient(),
                 new ForgeAdvancementProvider(packOutput, lookupProvider, existingFileHelper,
-                        List.of(new AUAdvancementProvider()))
-        );
+                    List.of(new AUAdvancementProvider()))
+            );
 
-        AUBlockTagGenerator blockTagGenerator = generator.addProvider(event.includeServer(),
-            new AUBlockTagGenerator(packOutput, lookupProvider, existingFileHelper)
-        );
+            AUBlockTagGenerator blockTagGenerator = generator.addProvider(event.includeServer(),
+                new AUBlockTagGenerator(packOutput, lookupProvider, existingFileHelper)
+            );
 
-        generator.addProvider(event.includeServer(),
-            new AUItemTagGenerator(packOutput, lookupProvider, blockTagGenerator.contentsGetter(), existingFileHelper)
-        );
+            generator.addProvider(event.includeServer(),
+                new AUItemTagGenerator(packOutput, lookupProvider, blockTagGenerator.contentsGetter(), existingFileHelper)
+            );
+        } catch (Exception e) {
+            AbandonedUnderground.LOGGER.log(java.util.logging.Level.SEVERE, "Data Generation Failed : " + e.getMessage(), e);
+            throw new RuntimeException(e);
+        }
     }
 
 }

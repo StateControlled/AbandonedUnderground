@@ -162,7 +162,6 @@ public class AUBlockLootTables extends BlockLootSubProvider {
 
         this.dropSelf(AUBlocks.STEEL_PLATE_SLAB.get());
         this.dropSelf(AUBlocks.SMOOTH_METAL_SLAB.get());
-
     }
 
     @Override

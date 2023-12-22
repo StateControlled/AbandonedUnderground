@@ -288,8 +288,6 @@ public class AURecipeProvider extends RecipeProvider implements IConditionBuilde
                 .define('S', Blocks.STONE_BRICKS)
                 .unlockedBy(getHasName(AUBlocks.CONCRETE_PLATFORM.get()), has(AUBlocks.CONCRETE_PLATFORM.get()))
                 .save(writer);
-
-
     } // END METHOD
 
     /**
