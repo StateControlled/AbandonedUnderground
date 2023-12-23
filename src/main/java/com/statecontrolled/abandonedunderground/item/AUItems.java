@@ -22,6 +22,9 @@ public class AUItems {
     public static final RegistryObject<Item> DIMENSIONAL_THREAD_MODULATOR = ITEMS.register("dimensional_thread_modulator",
             () -> new DimensionalThreadModulatorItem(new Item.Properties().stacksTo(1)));
 
+    public static final RegistryObject<Item> GLASS_DISC = ITEMS.register("glass_disc",
+            () -> new Item(new Item.Properties().stacksTo(1)));
+
     private AUItems() {
         ;
     }
