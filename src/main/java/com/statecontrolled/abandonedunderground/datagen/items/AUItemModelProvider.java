@@ -22,7 +22,7 @@ public class AUItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         registerSimpleItem(AUItems.DIMENSIONAL_THREAD_MODULATOR);
-        registerSimpleItem(AUItems.GLASS_DISC);
+        registerSimpleItem(AUItems.VOID_RESONANCE_CRYSTAL);
 
         registerSimpleBlockItem(AUBlocks.WHITE_TILE_STAIRS);
         registerSimpleBlockItem(AUBlocks.MOSSY_WHITE_TILE_STAIRS);

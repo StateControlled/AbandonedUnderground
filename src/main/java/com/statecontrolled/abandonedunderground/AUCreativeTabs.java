@@ -23,7 +23,7 @@ public class AUCreativeTabs {
                     .title(Component.translatable("creativetab.abandonedunderground_tab"))
                     .displayItems((displayParameters, output) -> {
                         output.accept(AUItems.DIMENSIONAL_THREAD_MODULATOR.get());
-                        output.accept(AUItems.GLASS_DISC.get());
+                        output.accept(AUItems.VOID_RESONANCE_CRYSTAL.get());
 
                         output.accept(AUBlocks.SMOOTH_LIGHT.get());
                         output.accept(AUBlocks.BRIGHT_WHITE_BLOCK.get());
