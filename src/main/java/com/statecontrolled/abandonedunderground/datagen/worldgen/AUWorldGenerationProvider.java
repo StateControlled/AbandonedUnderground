@@ -4,6 +4,7 @@ import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 
 import com.statecontrolled.abandonedunderground.AbandonedUnderground;
+import com.statecontrolled.abandonedunderground.worldgen.AUBiomes;
 import com.statecontrolled.abandonedunderground.worldgen.AbandonedUndergroundDimension;
 
 import net.minecraft.core.HolderLookup;
@@ -12,8 +13,12 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
 import net.minecraftforge.common.data.DatapackBuiltinEntriesProvider;
 
+/**
+ * For world generation : Custom Biomes and Dimension(s)
+ **/
 public class AUWorldGenerationProvider extends DatapackBuiltinEntriesProvider {
     public static final RegistrySetBuilder BUILDER = new RegistrySetBuilder()
+            .add(Registries.BIOME, AUBiomes::bootstrap)
             .add(Registries.LEVEL_STEM, AbandonedUndergroundDimension::bootstrapStem)
             .add(Registries.DIMENSION_TYPE, AbandonedUndergroundDimension::bootstrapType);
 

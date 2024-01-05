@@ -54,7 +54,7 @@ public class AbandonedUndergroundDimension {
     public static void bootstrapType(BootstapContext<DimensionType> context) {
         AbandonedUnderground.LOGGER.log(java.util.logging.Level.INFO, "Bootstrap Dimension Type");
         context.register(ABANDONEDUNDERGROUND_DIMENSION_TYPE, new DimensionType(
-                        OptionalLong.of(6000),
+                        OptionalLong.of(6000),  // fixed time
                         true,   // hasSkylight
                         false,  // hasCeiling
                         false,  // ultrawarm
@@ -67,7 +67,7 @@ public class AbandonedUndergroundDimension {
                         320,    // logical height
                         BlockTags.INFINIBURN_OVERWORLD,
                         BuiltinDimensionTypes.OVERWORLD_EFFECTS,
-                        0.05f,  // ambient light
+                        0.25f,  // ambient light
                         new DimensionType.MonsterSettings(false, false, ConstantInt.of(4), 4)
                 )
         );
@@ -83,7 +83,8 @@ public class AbandonedUndergroundDimension {
 
         FlatLayerInfo layer0 = new FlatLayerInfo(1, Blocks.BEDROCK);
         FlatLayerInfo layer1 = new FlatLayerInfo(63, Blocks.DEEPSLATE);
-        FlatLayerInfo layer2 = new FlatLayerInfo(319, Blocks.STONE);
+        //FlatLayerInfo layer2 = new FlatLayerInfo(319, Blocks.STONE);
+        FlatLayerInfo layer2 = new FlatLayerInfo(63, Blocks.STONE);
         FlatLayerInfo layer3 = new FlatLayerInfo(1, Blocks.QUARTZ_BLOCK);
 
         List<FlatLayerInfo> layerInfo = new ArrayList<>();
@@ -100,7 +101,8 @@ public class AbandonedUndergroundDimension {
         );
         HolderSet.Direct<StructureSet> direct = HolderSet.direct(vanillaUnderground.stream().map(structures::getOrThrow).collect(Collectors.toList()));
 
-        Holder<Biome> biomeSet = biomeRegistry.getOrThrow(Biomes.DARK_FOREST);
+        //Holder<Biome> biomeSet = biomeRegistry.getOrThrow(Biomes.DARK_FOREST);
+        Holder<Biome> biomeSet = biomeRegistry.getOrThrow(AUBiomes.LOST_TUNNELS);
 
         FlatLevelGeneratorSettings settings = null;
         if (GENERATE_MOD_STRUCTURES) {
